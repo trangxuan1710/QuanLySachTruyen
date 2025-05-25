@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLySachTruyen;
 
 namespace QuanLyMuonSach
 {
@@ -15,6 +16,12 @@ namespace QuanLyMuonSach
         public Dashboard_book()
         {
             InitializeComponent();
+            DAO.Connect();
+        }
+
+        private void btthoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
