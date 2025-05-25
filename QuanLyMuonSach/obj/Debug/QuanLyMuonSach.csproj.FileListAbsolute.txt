@@ -1,0 +1,39 @@
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe.config
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.pdb
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\Guna.UI2.dll
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Form1.resources
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Properties.Resources.resources
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMu.FC6E7602.Up2Date
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.exe
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.pdb
+C:\Users\Administrator\source\repos\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Dashboard_book.resources
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe.config
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.pdb
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\Guna.UI2.dll
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.AssemblyReference.cache
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Dashboard_book.resources
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Form1.resources
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Properties.Resources.resources
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.GenerateResource.cache
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.CoreCompileInputs.cache
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMu.FC6E7602.Up2Date
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.exe
+C:\Users\tiena\OneDrive\Desktop\C# Project\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.pdb
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe.config
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.pdb
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\bin\Debug\Guna.UI2.dll
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.AssemblyReference.cache
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Dashboard_book.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Form1.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Properties.Resources.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.GenerateResource.cache
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.CoreCompileInputs.cache
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMu.FC6E7602.Up2Date
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.exe
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.pdb

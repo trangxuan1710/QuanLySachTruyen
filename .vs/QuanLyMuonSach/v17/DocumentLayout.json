@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE031223-9A58-460A-87E5-8740EA0128F5}|QuanLyMuonSach\\QuanLyMuonSach.csproj|C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\quanlymuonsach\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE031223-9A58-460A-87E5-8740EA0128F5}|QuanLyMuonSach\\QuanLyMuonSach.csproj|solutionrelative:quanlymuonsach\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE031223-9A58-460A-87E5-8740EA0128F5}|QuanLyMuonSach\\QuanLyMuonSach.csproj|c:\\users\\trang\\source\\repos\\quanlymuonsach\\quanlymuonsach\\quanlymuonsach\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE031223-9A58-460A-87E5-8740EA0128F5}|QuanLyMuonSach\\QuanLyMuonSach.csproj|solutionrelative:quanlymuonsach\\thongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE031223-9A58-460A-87E5-8740EA0128F5}|QuanLyMuonSach\\QuanLyMuonSach.csproj|C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\quanlymuonsach\\dashboard_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BE031223-9A58-460A-87E5-8740EA0128F5}|QuanLyMuonSach\\QuanLyMuonSach.csproj|solutionrelative:quanlymuonsach\\dashboard_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "thongke.cs",
+              "DocumentMoniker": "C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\QuanLyMuonSach\\thongke.cs",
+              "RelativeDocumentMoniker": "QuanLyMuonSach\\thongke.cs",
+              "ToolTip": "C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\QuanLyMuonSach\\thongke.cs",
+              "RelativeToolTip": "QuanLyMuonSach\\thongke.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T09:07:50.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "thongke.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\QuanLyMuonSach\\thongke.cs",
+              "RelativeDocumentMoniker": "QuanLyMuonSach\\thongke.cs",
+              "ToolTip": "C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\QuanLyMuonSach\\thongke.cs [Design]",
+              "RelativeToolTip": "QuanLyMuonSach\\thongke.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T09:01:25.698Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard_book.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\QuanLyMuonSach\\Dashboard_book.cs",
+              "RelativeDocumentMoniker": "QuanLyMuonSach\\Dashboard_book.cs",
+              "ToolTip": "C:\\Users\\trang\\source\\repos\\QuanLyMuonSach\\QuanLyMuonSach\\QuanLyMuonSach\\Dashboard_book.cs [Design]",
+              "RelativeToolTip": "QuanLyMuonSach\\Dashboard_book.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T10:16:44.689Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
