@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-using Guna.UI2.WinForms; // Thêm namespace cho Guna2
+using QuanLyMuonSach;
+using QuanLySachTruyen;
 
 namespace QuanLyMuonSach
 {
@@ -23,6 +24,11 @@ namespace QuanLyMuonSach
             {
                 MessageBox.Show("Đăng nhập thất bại");
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

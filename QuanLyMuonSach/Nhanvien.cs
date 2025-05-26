@@ -9,9 +9,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyMuonSach;
+using QuanLySachTruyen;
 
-namespace QuanLySachTruyen
+namespace QuanLyMuonSach
 {
     public partial class NhanVien : Form
     {
@@ -358,5 +358,42 @@ namespace QuanLySachTruyen
             this.Close();
         }
 
+        private void GridNhanvien_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Dashboard_book formTrangchu = new Dashboard_book();
+
+            // Hiển thị form TrangChu
+            formTrangchu.ShowDialog();
+            this.Close();
+        }
+
+        private void btnmuonsach_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MuonSach formMuonsach = new MuonSach();
+
+            // Hiển thị form TrangChu
+            formMuonsach.ShowDialog();
+            this.Close();
+        }
+
+        private void btnnhanvien_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            NhanVien formNhanvien = new NhanVien();
+
+            // Hiển thị form TrangChu
+            formNhanvien.ShowDialog();
+            this.Close();
+        }
     }
 }

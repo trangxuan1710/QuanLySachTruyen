@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using QuanLyMuonSach;
 using QuanLySachTruyen;
 
-namespace btl
+namespace QuanLyMuonSach
 {
     public partial class MuonSach : Form
     {
@@ -324,6 +324,39 @@ namespace btl
             bsua.Enabled = false;
             bxoa.Enabled = false;
             bluu.Enabled = true; // Bật nút Lưu
+        }
+
+        private void btthoat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Dashboard_book formTrangchu = new Dashboard_book();
+
+            // Hiển thị form TrangChu
+            formTrangchu.ShowDialog();
+            this.Close();
+        }
+
+        private void btnmuonsach_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MuonSach formMuonsach = new MuonSach();
+
+            // Hiển thị form TrangChu
+            formMuonsach.ShowDialog();
+            this.Close();
+        }
+
+        private void btnnhanvien_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            NhanVien formNhanvien = new NhanVien();
+
+            // Hiển thị form TrangChu
+            formNhanvien.ShowDialog();
+            this.Close();
         }
     }
 }

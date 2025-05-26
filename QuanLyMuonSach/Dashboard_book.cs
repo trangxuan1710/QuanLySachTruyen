@@ -16,11 +16,32 @@ namespace QuanLyMuonSach
         public Dashboard_book()
         {
             InitializeComponent();
-            DAO.Connect();
         }
 
         private void btthoat_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void btnmuonsach_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MuonSach formMuonsach = new MuonSach();
+
+            // Hiển thị form TrangChu
+            formMuonsach.ShowDialog();
+            this.Close();
+        }
+
+        private void btnnhanvien_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            NhanVien formNhanvien = new NhanVien();
+
+            // Hiển thị form TrangChu
+            formNhanvien.ShowDialog();
             this.Close();
         }
     }

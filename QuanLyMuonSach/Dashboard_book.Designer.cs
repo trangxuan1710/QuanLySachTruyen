@@ -37,7 +37,7 @@
             this.btnsachtruyen = new Guna.UI2.WinForms.Guna2Button();
             this.btnmuonsach = new Guna.UI2.WinForms.Guna2Button();
             this.btnthongke = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnnhanvien = new Guna.UI2.WinForms.Guna2Button();
             this.btthoat = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(29, 64);
+            this.label1.Location = new System.Drawing.Point(29, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 38);
             this.label1.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(603, 40);
+            this.label2.Location = new System.Drawing.Point(539, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(1076, 61);
             this.label2.TabIndex = 1;
@@ -68,7 +68,7 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(502, 189);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(501, 154);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(1324, 1036);
@@ -87,7 +87,7 @@
             this.btnkhachhang.ForeColor = System.Drawing.Color.White;
             this.btnkhachhang.Image = ((System.Drawing.Image)(resources.GetObject("btnkhachhang.Image")));
             this.btnkhachhang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnkhachhang.Location = new System.Drawing.Point(74, 538);
+            this.btnkhachhang.Location = new System.Drawing.Point(74, 451);
             this.btnkhachhang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnkhachhang.Name = "btnkhachhang";
             this.btnkhachhang.Size = new System.Drawing.Size(324, 82);
@@ -105,7 +105,7 @@
             this.btnvipham.ForeColor = System.Drawing.Color.White;
             this.btnvipham.Image = ((System.Drawing.Image)(resources.GetObject("btnvipham.Image")));
             this.btnvipham.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnvipham.Location = new System.Drawing.Point(74, 691);
+            this.btnvipham.Location = new System.Drawing.Point(74, 594);
             this.btnvipham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnvipham.Name = "btnvipham";
             this.btnvipham.Size = new System.Drawing.Size(324, 82);
@@ -123,7 +123,7 @@
             this.btnsachtruyen.ForeColor = System.Drawing.Color.White;
             this.btnsachtruyen.Image = ((System.Drawing.Image)(resources.GetObject("btnsachtruyen.Image")));
             this.btnsachtruyen.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnsachtruyen.Location = new System.Drawing.Point(74, 236);
+            this.btnsachtruyen.Location = new System.Drawing.Point(74, 154);
             this.btnsachtruyen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnsachtruyen.Name = "btnsachtruyen";
             this.btnsachtruyen.Size = new System.Drawing.Size(324, 95);
@@ -141,12 +141,13 @@
             this.btnmuonsach.ForeColor = System.Drawing.Color.White;
             this.btnmuonsach.Image = ((System.Drawing.Image)(resources.GetObject("btnmuonsach.Image")));
             this.btnmuonsach.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnmuonsach.Location = new System.Drawing.Point(74, 390);
+            this.btnmuonsach.Location = new System.Drawing.Point(74, 306);
             this.btnmuonsach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnmuonsach.Name = "btnmuonsach";
             this.btnmuonsach.Size = new System.Drawing.Size(324, 82);
             this.btnmuonsach.TabIndex = 6;
             this.btnmuonsach.Text = "MƯỢN SÁCH";
+            this.btnmuonsach.Click += new System.EventHandler(this.btnmuonsach_Click);
             // 
             // btnthongke
             // 
@@ -159,30 +160,31 @@
             this.btnthongke.ForeColor = System.Drawing.Color.White;
             this.btnthongke.Image = ((System.Drawing.Image)(resources.GetObject("btnthongke.Image")));
             this.btnthongke.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnthongke.Location = new System.Drawing.Point(74, 848);
+            this.btnthongke.Location = new System.Drawing.Point(74, 736);
             this.btnthongke.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnthongke.Name = "btnthongke";
             this.btnthongke.Size = new System.Drawing.Size(324, 82);
             this.btnthongke.TabIndex = 7;
             this.btnthongke.Text = "THỐNG KÊ";
             // 
-            // guna2Button6
+            // btnnhanvien
             // 
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.DarkCyan;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
-            this.guna2Button6.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button6.Location = new System.Drawing.Point(74, 1000);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(324, 82);
-            this.guna2Button6.TabIndex = 8;
-            this.guna2Button6.Text = "NHÂN VIÊN ";
+            this.btnnhanvien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnnhanvien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnnhanvien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnnhanvien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnnhanvien.FillColor = System.Drawing.Color.DarkCyan;
+            this.btnnhanvien.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnnhanvien.ForeColor = System.Drawing.Color.White;
+            this.btnnhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnnhanvien.Image")));
+            this.btnnhanvien.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnnhanvien.Location = new System.Drawing.Point(74, 878);
+            this.btnnhanvien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnnhanvien.Name = "btnnhanvien";
+            this.btnnhanvien.Size = new System.Drawing.Size(324, 82);
+            this.btnnhanvien.TabIndex = 8;
+            this.btnnhanvien.Text = "NHÂN VIÊN ";
+            this.btnnhanvien.Click += new System.EventHandler(this.btnnhanvien_Click);
             // 
             // btthoat
             // 
@@ -208,9 +210,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(139)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(1863, 1106);
+            this.ClientSize = new System.Drawing.Size(1695, 1001);
             this.Controls.Add(this.btthoat);
-            this.Controls.Add(this.guna2Button6);
+            this.Controls.Add(this.btnnhanvien);
             this.Controls.Add(this.btnthongke);
             this.Controls.Add(this.btnmuonsach);
             this.Controls.Add(this.btnsachtruyen);
@@ -240,7 +242,7 @@
         private Guna.UI2.WinForms.Guna2Button btnsachtruyen;
         private Guna.UI2.WinForms.Guna2Button btnmuonsach;
         private Guna.UI2.WinForms.Guna2Button btnthongke;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnnhanvien;
         private Guna.UI2.WinForms.Guna2Button btthoat;
     }
 }

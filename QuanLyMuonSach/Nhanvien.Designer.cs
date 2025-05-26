@@ -1,4 +1,4 @@
-﻿namespace QuanLySachTruyen
+﻿namespace QuanLyMuonSach
 {
     partial class NhanVien
     {
@@ -124,6 +124,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(115, 90);
             this.guna2Button1.TabIndex = 61;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnnhanvien
             // 
@@ -136,12 +137,13 @@
             this.btnnhanvien.ForeColor = System.Drawing.Color.White;
             this.btnnhanvien.Image = ((System.Drawing.Image)(resources.GetObject("btnnhanvien.Image")));
             this.btnnhanvien.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnnhanvien.Location = new System.Drawing.Point(59, 941);
+            this.btnnhanvien.Location = new System.Drawing.Point(59, 835);
             this.btnnhanvien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnnhanvien.Name = "btnnhanvien";
             this.btnnhanvien.Size = new System.Drawing.Size(324, 82);
             this.btnnhanvien.TabIndex = 60;
             this.btnnhanvien.Text = "NHÂN VIÊN ";
+            this.btnnhanvien.Click += new System.EventHandler(this.btnnhanvien_Click);
             // 
             // btnthongke
             // 
@@ -154,7 +156,7 @@
             this.btnthongke.ForeColor = System.Drawing.Color.White;
             this.btnthongke.Image = ((System.Drawing.Image)(resources.GetObject("btnthongke.Image")));
             this.btnthongke.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnthongke.Location = new System.Drawing.Point(59, 789);
+            this.btnthongke.Location = new System.Drawing.Point(59, 692);
             this.btnthongke.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnthongke.Name = "btnthongke";
             this.btnthongke.Size = new System.Drawing.Size(324, 82);
@@ -172,12 +174,13 @@
             this.btnmuonsach.ForeColor = System.Drawing.Color.White;
             this.btnmuonsach.Image = ((System.Drawing.Image)(resources.GetObject("btnmuonsach.Image")));
             this.btnmuonsach.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnmuonsach.Location = new System.Drawing.Point(59, 331);
+            this.btnmuonsach.Location = new System.Drawing.Point(59, 285);
             this.btnmuonsach.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnmuonsach.Name = "btnmuonsach";
             this.btnmuonsach.Size = new System.Drawing.Size(324, 82);
             this.btnmuonsach.TabIndex = 58;
             this.btnmuonsach.Text = "MƯỢN SÁCH";
+            this.btnmuonsach.Click += new System.EventHandler(this.btnmuonsach_Click);
             // 
             // btnsachtruyen
             // 
@@ -190,7 +193,7 @@
             this.btnsachtruyen.ForeColor = System.Drawing.Color.White;
             this.btnsachtruyen.Image = ((System.Drawing.Image)(resources.GetObject("btnsachtruyen.Image")));
             this.btnsachtruyen.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnsachtruyen.Location = new System.Drawing.Point(59, 177);
+            this.btnsachtruyen.Location = new System.Drawing.Point(59, 138);
             this.btnsachtruyen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnsachtruyen.Name = "btnsachtruyen";
             this.btnsachtruyen.Size = new System.Drawing.Size(324, 95);
@@ -208,7 +211,7 @@
             this.btnvipham.ForeColor = System.Drawing.Color.White;
             this.btnvipham.Image = ((System.Drawing.Image)(resources.GetObject("btnvipham.Image")));
             this.btnvipham.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnvipham.Location = new System.Drawing.Point(59, 632);
+            this.btnvipham.Location = new System.Drawing.Point(59, 554);
             this.btnvipham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnvipham.Name = "btnvipham";
             this.btnvipham.Size = new System.Drawing.Size(324, 82);
@@ -226,7 +229,7 @@
             this.btnkhachhang.ForeColor = System.Drawing.Color.White;
             this.btnkhachhang.Image = ((System.Drawing.Image)(resources.GetObject("btnkhachhang.Image")));
             this.btnkhachhang.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnkhachhang.Location = new System.Drawing.Point(59, 479);
+            this.btnkhachhang.Location = new System.Drawing.Point(59, 424);
             this.btnkhachhang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnkhachhang.Name = "btnkhachhang";
             this.btnkhachhang.Size = new System.Drawing.Size(324, 82);
@@ -261,7 +264,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label9.ForeColor = System.Drawing.Color.LemonChiffon;
-            this.label9.Location = new System.Drawing.Point(858, 101);
+            this.label9.Location = new System.Drawing.Point(858, 90);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(20);
             this.label9.Size = new System.Drawing.Size(524, 94);
@@ -271,13 +274,14 @@
             // GridNhanvien
             // 
             this.GridNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridNhanvien.Location = new System.Drawing.Point(599, 554);
+            this.GridNhanvien.Location = new System.Drawing.Point(599, 525);
             this.GridNhanvien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GridNhanvien.Name = "GridNhanvien";
             this.GridNhanvien.RowHeadersWidth = 51;
             this.GridNhanvien.RowTemplate.Height = 24;
-            this.GridNhanvien.Size = new System.Drawing.Size(1065, 363);
+            this.GridNhanvien.Size = new System.Drawing.Size(1033, 279);
             this.GridNhanvien.TabIndex = 78;
+            this.GridNhanvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridNhanvien_CellContentClick_1);
             // 
             // ckgioitinh
             // 
@@ -285,7 +289,7 @@
             this.ckgioitinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ckgioitinh.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckgioitinh.ForeColor = System.Drawing.Color.White;
-            this.ckgioitinh.Location = new System.Drawing.Point(1406, 485);
+            this.ckgioitinh.Location = new System.Drawing.Point(1374, 451);
             this.ckgioitinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ckgioitinh.Name = "ckgioitinh";
             this.ckgioitinh.Size = new System.Drawing.Size(97, 42);
@@ -298,7 +302,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1234, 485);
+            this.label8.Location = new System.Drawing.Point(1204, 453);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(132, 38);
             this.label8.TabIndex = 76;
@@ -309,7 +313,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(1234, 397);
+            this.label7.Location = new System.Drawing.Point(1204, 371);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(148, 38);
             this.label7.TabIndex = 75;
@@ -319,7 +323,7 @@
             // 
             this.mngaysinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mngaysinh.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mngaysinh.Location = new System.Drawing.Point(1406, 390);
+            this.mngaysinh.Location = new System.Drawing.Point(1374, 369);
             this.mngaysinh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mngaysinh.Mask = "00/00/0000";
             this.mngaysinh.Name = "mngaysinh";
@@ -332,7 +336,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1234, 316);
+            this.label6.Location = new System.Drawing.Point(1204, 287);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 38);
             this.label6.TabIndex = 73;
@@ -342,7 +346,7 @@
             // 
             this.mdienthoai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mdienthoai.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mdienthoai.Location = new System.Drawing.Point(1406, 309);
+            this.mdienthoai.Location = new System.Drawing.Point(1374, 285);
             this.mdienthoai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mdienthoai.Mask = "(999) 000-0000";
             this.mdienthoai.Name = "mdienthoai";
@@ -353,7 +357,7 @@
             // 
             this.txtdiachi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtdiachi.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtdiachi.Location = new System.Drawing.Point(1406, 222);
+            this.txtdiachi.Location = new System.Drawing.Point(1374, 201);
             this.txtdiachi.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtdiachi.Name = "txtdiachi";
             this.txtdiachi.Size = new System.Drawing.Size(258, 45);
@@ -364,7 +368,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1234, 229);
+            this.label5.Location = new System.Drawing.Point(1204, 203);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 38);
             this.label5.TabIndex = 70;
@@ -375,7 +379,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(593, 479);
+            this.label10.Location = new System.Drawing.Point(592, 453);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(187, 38);
             this.label10.TabIndex = 68;
@@ -386,7 +390,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(596, 397);
+            this.label11.Location = new System.Drawing.Point(596, 371);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(106, 38);
             this.label11.TabIndex = 66;
@@ -397,7 +401,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(593, 316);
+            this.label12.Location = new System.Drawing.Point(592, 287);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(199, 38);
             this.label12.TabIndex = 64;
@@ -408,7 +412,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(596, 229);
+            this.label13.Location = new System.Drawing.Point(596, 203);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(196, 38);
             this.label13.TabIndex = 62;
@@ -427,7 +431,7 @@
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.Image")));
             this.btnThem.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnThem.Location = new System.Drawing.Point(599, 966);
+            this.btnThem.Location = new System.Drawing.Point(603, 860);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(169, 57);
             this.btnThem.TabIndex = 85;
@@ -446,7 +450,7 @@
             this.btnSua.ForeColor = System.Drawing.Color.White;
             this.btnSua.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.Image")));
             this.btnSua.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSua.Location = new System.Drawing.Point(813, 966);
+            this.btnSua.Location = new System.Drawing.Point(810, 860);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(169, 57);
             this.btnSua.TabIndex = 86;
@@ -465,7 +469,7 @@
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.Image")));
             this.btnXoa.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnXoa.Location = new System.Drawing.Point(1032, 966);
+            this.btnXoa.Location = new System.Drawing.Point(1030, 860);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(169, 57);
             this.btnXoa.TabIndex = 87;
@@ -484,7 +488,7 @@
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnLuu.Image")));
             this.btnLuu.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLuu.Location = new System.Drawing.Point(1270, 966);
+            this.btnLuu.Location = new System.Drawing.Point(1252, 860);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(169, 57);
             this.btnLuu.TabIndex = 88;
@@ -503,7 +507,7 @@
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
             this.btnThoat.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnThoat.Location = new System.Drawing.Point(1495, 966);
+            this.btnThoat.Location = new System.Drawing.Point(1463, 860);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(169, 57);
             this.btnThoat.TabIndex = 89;
@@ -513,7 +517,7 @@
             // 
             this.txtluongthang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtluongthang.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtluongthang.Location = new System.Drawing.Point(810, 477);
+            this.txtluongthang.Location = new System.Drawing.Point(810, 451);
             this.txtluongthang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtluongthang.Name = "txtluongthang";
             this.txtluongthang.Size = new System.Drawing.Size(258, 45);
@@ -523,7 +527,7 @@
             // 
             this.txtcalam.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtcalam.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcalam.Location = new System.Drawing.Point(810, 397);
+            this.txtcalam.Location = new System.Drawing.Point(810, 369);
             this.txtcalam.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtcalam.Name = "txtcalam";
             this.txtcalam.Size = new System.Drawing.Size(258, 45);
@@ -533,7 +537,7 @@
             // 
             this.txttennv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txttennv.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttennv.Location = new System.Drawing.Point(810, 309);
+            this.txttennv.Location = new System.Drawing.Point(810, 285);
             this.txttennv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txttennv.Name = "txttennv";
             this.txttennv.Size = new System.Drawing.Size(258, 45);
@@ -543,7 +547,7 @@
             // 
             this.txtmanv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtmanv.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmanv.Location = new System.Drawing.Point(810, 222);
+            this.txtmanv.Location = new System.Drawing.Point(810, 201);
             this.txtmanv.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtmanv.Name = "txtmanv";
             this.txtmanv.Size = new System.Drawing.Size(258, 45);
@@ -554,7 +558,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(139)))), ((int)(((byte)(81)))));
-            this.ClientSize = new System.Drawing.Size(1863, 1050);
+            this.ClientSize = new System.Drawing.Size(1695, 1001);
             this.Controls.Add(this.txtmanv);
             this.Controls.Add(this.txttennv);
             this.Controls.Add(this.txtcalam);
