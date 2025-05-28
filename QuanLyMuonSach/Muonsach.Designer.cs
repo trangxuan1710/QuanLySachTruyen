@@ -151,6 +151,7 @@
             this.btnsachtruyen.Size = new System.Drawing.Size(324, 95);
             this.btnsachtruyen.TabIndex = 47;
             this.btnsachtruyen.Text = "SÁCH TRUYỆN";
+            
             // 
             // btnvipham
             // 
@@ -195,7 +196,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(568, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1076, 61);
+            this.label2.Size = new System.Drawing.Size(884, 50);
             this.label2.TabIndex = 43;
             this.label2.Text = "CHƯƠNG TRÌNH QUẢN LÝ MƯỢN SÁCH, TRUYỆN";
             // 
@@ -206,7 +207,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(30, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 38);
+            this.label1.Size = new System.Drawing.Size(158, 31);
             this.label1.TabIndex = 42;
             this.label1.Text = "DASHBOARD";
             // 
@@ -217,7 +218,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(607, 202);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(132, 38);
+            this.label7.Size = new System.Drawing.Size(113, 32);
             this.label7.TabIndex = 69;
             this.label7.Text = "Mã Thuê";
             this.label7.UseWaitCursor = true;
@@ -238,7 +239,7 @@
             this.txttiencoc.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttiencoc.Location = new System.Drawing.Point(1350, 295);
             this.txttiencoc.Name = "txttiencoc";
-            this.txttiencoc.Size = new System.Drawing.Size(269, 45);
+            this.txttiencoc.Size = new System.Drawing.Size(269, 39);
             this.txttiencoc.TabIndex = 66;
             // 
             // dngaythue
@@ -248,7 +249,7 @@
             this.dngaythue.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dngaythue.Location = new System.Drawing.Point(1350, 197);
             this.dngaythue.Name = "dngaythue";
-            this.dngaythue.Size = new System.Drawing.Size(269, 45);
+            this.dngaythue.Size = new System.Drawing.Size(269, 39);
             this.dngaythue.TabIndex = 65;
             // 
             // label6
@@ -258,7 +259,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(1180, 298);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 38);
+            this.label6.Size = new System.Drawing.Size(109, 32);
             this.label6.TabIndex = 57;
             this.label6.Text = "Tiền cọc";
             this.label6.UseWaitCursor = true;
@@ -270,7 +271,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(1180, 198);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(154, 38);
+            this.label5.Size = new System.Drawing.Size(132, 32);
             this.label5.TabIndex = 56;
             this.label5.Text = "Ngày thuê";
             // 
@@ -279,7 +280,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(462, 565);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 38);
+            this.label4.Size = new System.Drawing.Size(0, 32);
             this.label4.TabIndex = 55;
             this.label4.UseWaitCursor = true;
             // 
@@ -290,7 +291,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(607, 400);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(201, 38);
+            this.label3.Size = new System.Drawing.Size(173, 32);
             this.label3.TabIndex = 54;
             this.label3.Text = "Mã Nhân viên";
             this.label3.UseWaitCursor = true;
@@ -302,7 +303,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Location = new System.Drawing.Point(607, 298);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 38);
+            this.label8.Size = new System.Drawing.Size(126, 32);
             this.label8.TabIndex = 53;
             this.label8.Text = "Mã Khách";
             this.label8.UseWaitCursor = true;
@@ -314,7 +315,7 @@
             this.label9.ForeColor = System.Drawing.Color.LemonChiffon;
             this.label9.Location = new System.Drawing.Point(921, 111);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(389, 54);
+            this.label9.Size = new System.Drawing.Size(332, 46);
             this.label9.TabIndex = 52;
             this.label9.Text = "THÔNG TIN MƯỢN";
             // 
@@ -323,7 +324,7 @@
             this.txtmanv.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmanv.Location = new System.Drawing.Point(814, 397);
             this.txtmanv.Name = "txtmanv";
-            this.txtmanv.Size = new System.Drawing.Size(269, 45);
+            this.txtmanv.Size = new System.Drawing.Size(269, 39);
             this.txtmanv.TabIndex = 70;
             // 
             // txtmakhach
@@ -331,7 +332,7 @@
             this.txtmakhach.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmakhach.Location = new System.Drawing.Point(814, 295);
             this.txtmakhach.Name = "txtmakhach";
-            this.txtmakhach.Size = new System.Drawing.Size(269, 45);
+            this.txtmakhach.Size = new System.Drawing.Size(269, 39);
             this.txtmakhach.TabIndex = 71;
             // 
             // txtmathue
@@ -339,7 +340,7 @@
             this.txtmathue.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmathue.Location = new System.Drawing.Point(814, 195);
             this.txtmathue.Name = "txtmathue";
-            this.txtmathue.Size = new System.Drawing.Size(269, 45);
+            this.txtmathue.Size = new System.Drawing.Size(269, 39);
             this.txtmathue.TabIndex = 72;
             // 
             // bthem
@@ -439,7 +440,7 @@
             // 
             // MuonSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 38F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(139)))), ((int)(((byte)(81)))));
             this.ClientSize = new System.Drawing.Size(1695, 1001);
