@@ -114,6 +114,7 @@
             this.bthuy.Size = new System.Drawing.Size(169, 58);
             this.bthuy.TabIndex = 39;
             this.bthuy.Text = "Hủy";
+            this.bthuy.Click += new System.EventHandler(this.bthuy_Click);
             // 
             // btluu
             // 
@@ -134,6 +135,7 @@
             this.btluu.Size = new System.Drawing.Size(169, 58);
             this.btluu.TabIndex = 38;
             this.btluu.Text = "Lưu";
+            this.btluu.Click += new System.EventHandler(this.btluu_Click);
             // 
             // btxoa
             // 
@@ -154,6 +156,7 @@
             this.btxoa.Size = new System.Drawing.Size(169, 58);
             this.btxoa.TabIndex = 37;
             this.btxoa.Text = "Xóa";
+            this.btxoa.Click += new System.EventHandler(this.btxoa_Click);
             // 
             // btsua
             // 
@@ -174,6 +177,7 @@
             this.btsua.Size = new System.Drawing.Size(169, 58);
             this.btsua.TabIndex = 36;
             this.btsua.Text = "Sửa";
+            this.btsua.Click += new System.EventHandler(this.btsua_Click);
             // 
             // btthem
             // 
@@ -241,7 +245,7 @@
             // 
             this.datakhachhang.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.datakhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datakhachhang.Location = new System.Drawing.Point(572, 738);
+            this.datakhachhang.Location = new System.Drawing.Point(538, 743);
             this.datakhachhang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datakhachhang.Name = "datakhachhang";
             this.datakhachhang.RowHeadersWidth = 62;
@@ -669,6 +673,7 @@
             this.txtghichu.SelectedText = "";
             this.txtghichu.Size = new System.Drawing.Size(316, 92);
             this.txtghichu.TabIndex = 60;
+            this.txtghichu.TextChanged += new System.EventHandler(this.txtghichu_TextChanged);
             // 
             // label14
             // 

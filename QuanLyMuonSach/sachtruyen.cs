@@ -118,56 +118,8 @@ namespace QuanLyMuonSach
             DAO.Close();
 
         }
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            if (thaoTac == "them")
-
-            {
-                string sql = "INSERT INTO Sach(TenSach, MaLoaiSach, MaLinhVuc, MaTG, MaNXB, MaNgonNgu, SoTrang, GiaSach, DonGiaThue, SoLuong, Anh, GhiChu)" +
-                             " VALUES (N'" + txttensach.Text + "', N'" + cbtheloai.Text + "', N'" + cblinhvuc.Text + "', N'" + txtmatacgia.Text + "'," +
-                             " N'" +txtmanxb.Text + "', N'" + txtmangonngu.Text + "', " +txtsotrang.Text + ", " + txtgiasach.Text + ", " +
-                             txtdongiathue.Text + ", " + txtsoluong.Text + ", N'" + pickhachhang.Text + "', N'" +  txtghichu.Text + "')";
-
-                DAO.Connect();
-                SqlCommand cmd = new SqlCommand(sql, DAO.con);
-                cmd.ExecuteNonQuery();
-                DAO.Close();
-                MessageBox.Show("Đã thêm sách.");
-            }
-            else if (thaoTac == "sua")
-            {
-                string sql = "UPDATE Sach SET " +
-                             "MaLoaiSach = N'" + cbtheloai.Text + "', " +
-                             "MaLinhVuc = N'" + cblinhvuc.Text + "', " +
-                             "MaTG = N'" + txtmatacgia.Text + "', " +
-                             "MaNXB = N'" +txtmanxb.Text + "', " +
-                             "MaNgonNgu = N'" + txtmangonngu.Text + "', " +
-                             "SoTrang = " +txtsotrang.Text + ", " +
-                             "GiaSach = " + txtgiasach.Text + ", " +
-                             "DonGiaThue = " + txtdongiathue.Text + ", " +
-                             "SoLuong = " + txtsoluong.Text + ", " +
-                             "Anh = N'" + pickhachhang.Text + "', " +
-                             "GhiChu = N'" +  txtghichu.Text + "' " +
-                             "WHERE TenSach = N'" + txttensach.Text + "'";
-
-                DAO.Connect();
-                SqlCommand cmd = new SqlCommand(sql, DAO.con);
-                cmd.ExecuteNonQuery();
-                DAO.Close();
-                MessageBox.Show("Đã cập nhật sách.");
-            }
-
-            LoadSach();
-            ClearInput();
-            EnableInput(false);
-            thaoTac = "";
-        }
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            ClearInput();
-            EnableInput(false);
-            thaoTac = "";
-        }
+       
+       
         private void ClearInput()
         {
             txttensach.Clear();
@@ -201,60 +153,9 @@ namespace QuanLyMuonSach
         }
 
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-            thaoTac = "sua";
-            EnableInput(true);
-            DAO.Connect();
-            string sql = "UPDATE Sach SET " +
-                         "MaLoaiSach=@MaLoaiSach, MaLinhVuc=@MaLinhVuc, MaTG=@MaTG, MaNXB=@MaNXB, MaNgonNgu=@MaNgonNgu, " +
-                         "SoTrang=@SoTrang, GiaSach=@GiaSach, DonGiaThue=@DonGiaThue, SoLuong=@SoLuong, Anh=@Anh, GhiChu=@GhiChu " +
-                         "WHERE TenSach=@TenSach";
-            SqlCommand cmd = new SqlCommand(sql, DAO.con);
-            cmd.Parameters.AddWithValue("@TenSach", txttensach.Text);
-            cmd.Parameters.AddWithValue("@MaLoaiSach", cbtheloai.Text);
-            cmd.Parameters.AddWithValue("@MaLinhVuc", cblinhvuc.Text);
-            cmd.Parameters.AddWithValue("@MaTG", txtmatacgia.Text);
-            cmd.Parameters.AddWithValue("@MaNXB",txtmanxb.Text);
-            cmd.Parameters.AddWithValue("@MaNgonNgu", txtmangonngu.Text);
-            cmd.Parameters.AddWithValue("@SoTrang",txtsotrang.Text);
-            cmd.Parameters.AddWithValue("@GiaSach", txtgiasach.Text);
-            cmd.Parameters.AddWithValue("@DonGiaThue", txtdongiathue.Text);
-            cmd.Parameters.AddWithValue("@SoLuong", txtsoluong.Text);
-            cmd.Parameters.AddWithValue("@Anh", pickhachhang.Text);
-            cmd.Parameters.AddWithValue("@GhiChu", txtghichu.Text);
-
-            try
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Cập nhật thành công!");
-                LoadSach();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
-            DAO.Close();
-        }
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            DAO.Connect();
-            string sql = "DELETE FROM Sach WHERE TenSach = @TenSach";
-            SqlCommand cmd = new SqlCommand(sql, DAO.con);
-            cmd.Parameters.AddWithValue("@TenSach", txttensach.Text);
-
-            try
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Xóa thành công!");
-                LoadSach();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
-            DAO.Close();
-        }
+       
+        
+        
 
         private void LoadSach()
         {
@@ -322,6 +223,121 @@ namespace QuanLyMuonSach
                     MessageBox.Show("Lỗi khi mở ảnh: " + ex.Message);
                 }
             }
+        }
+
+        private void btsua_Click(object sender, EventArgs e)
+        {
+            thaoTac = "sua";
+            EnableInput(true);
+            DAO.Connect();
+            string sql = "UPDATE Sach SET " +
+                         "MaLoaiSach=@MaLoaiSach, MaLinhVuc=@MaLinhVuc, MaTG=@MaTG, MaNXB=@MaNXB, MaNgonNgu=@MaNgonNgu, " +
+                         "SoTrang=@SoTrang, GiaSach=@GiaSach, DonGiaThue=@DonGiaThue, SoLuong=@SoLuong, Anh=@Anh, GhiChu=@GhiChu " +
+                         "WHERE TenSach=@TenSach";
+            SqlCommand cmd = new SqlCommand(sql, DAO.con);
+            cmd.Parameters.AddWithValue("@TenSach", txttensach.Text);
+            cmd.Parameters.AddWithValue("@MaLoaiSach", cbtheloai.Text);
+            cmd.Parameters.AddWithValue("@MaLinhVuc", cblinhvuc.Text);
+            cmd.Parameters.AddWithValue("@MaTG", txtmatacgia.Text);
+            cmd.Parameters.AddWithValue("@MaNXB", txtmanxb.Text);
+            cmd.Parameters.AddWithValue("@MaNgonNgu", txtmangonngu.Text);
+            cmd.Parameters.AddWithValue("@SoTrang", txtsotrang.Text);
+            cmd.Parameters.AddWithValue("@GiaSach", txtgiasach.Text);
+            cmd.Parameters.AddWithValue("@DonGiaThue", txtdongiathue.Text);
+            cmd.Parameters.AddWithValue("@SoLuong", txtsoluong.Text);
+            cmd.Parameters.AddWithValue("@Anh", pickhachhang.Text);
+            cmd.Parameters.AddWithValue("@GhiChu", txtghichu.Text);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Cập nhật thành công!");
+                LoadSach();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            DAO.Close();
+
+        }
+
+        private void btxoa_Click(object sender, EventArgs e)
+        {
+            DAO.Connect();
+            string sql = "DELETE FROM Sach WHERE TenSach = @TenSach";
+            SqlCommand cmd = new SqlCommand(sql, DAO.con);
+            cmd.Parameters.AddWithValue("@TenSach", txttensach.Text);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Xóa thành công!");
+                LoadSach();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            DAO.Close();
+        }
+
+        private void btluu_Click(object sender, EventArgs e)
+        {
+            if (thaoTac == "them")
+
+            {
+                string sql = "INSERT INTO Sach(TenSach, MaLoaiSach, MaLinhVuc, MaTG, MaNXB, MaNgonNgu, SoTrang, GiaSach, DonGiaThue, SoLuong, Anh, GhiChu)" +
+                             " VALUES (N'" + txttensach.Text + "', N'" + cbtheloai.Text + "', N'" + cblinhvuc.Text + "', N'" + txtmatacgia.Text + "'," +
+                             " N'" + txtmanxb.Text + "', N'" + txtmangonngu.Text + "', " + txtsotrang.Text + ", " + txtgiasach.Text + ", " +
+                             txtdongiathue.Text + ", " + txtsoluong.Text + ", N'" + pickhachhang.Text + "', N'" + txtghichu.Text + "')";
+
+                DAO.Connect();
+                SqlCommand cmd = new SqlCommand(sql, DAO.con);
+                cmd.ExecuteNonQuery();
+                DAO.Close();
+                MessageBox.Show("Đã thêm sách.");
+            }
+            else if (thaoTac == "sua")
+            {
+                string sql = "UPDATE Sach SET " +
+                             "MaLoaiSach = N'" + cbtheloai.Text + "', " +
+                             "MaLinhVuc = N'" + cblinhvuc.Text + "', " +
+                             "MaTG = N'" + txtmatacgia.Text + "', " +
+                             "MaNXB = N'" + txtmanxb.Text + "', " +
+                             "MaNgonNgu = N'" + txtmangonngu.Text + "', " +
+                             "SoTrang = " + txtsotrang.Text + ", " +
+                             "GiaSach = " + txtgiasach.Text + ", " +
+                             "DonGiaThue = " + txtdongiathue.Text + ", " +
+                             "SoLuong = " + txtsoluong.Text + ", " +
+                             "Anh = N'" + pickhachhang.Text + "', " +
+                             "GhiChu = N'" + txtghichu.Text + "' " +
+                             "WHERE TenSach = N'" + txttensach.Text + "'";
+
+                DAO.Connect();
+                SqlCommand cmd = new SqlCommand(sql, DAO.con);
+                cmd.ExecuteNonQuery();
+                DAO.Close();
+                MessageBox.Show("Đã cập nhật sách.");
+            }
+
+            LoadSach();
+            ClearInput();
+            EnableInput(false);
+            thaoTac = "";
+
+        }
+
+        private void bthuy_Click(object sender, EventArgs e)
+        {
+            ClearInput();
+            EnableInput(false);
+            thaoTac = "";
+        }
+
+        private void txtghichu_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
