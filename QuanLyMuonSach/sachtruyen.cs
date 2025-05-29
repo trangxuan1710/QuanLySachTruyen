@@ -19,26 +19,22 @@ namespace QuanLyMuonSach
         public sachtruyen()
         {
             InitializeComponent();
-    }
-        private string thaoTac = "";
+        }
 
+        private string thaoTac = "";
 
         private void btthoat_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             Dashboard_book formTrangchu = new Dashboard_book();
-
-            // Hiển thị form TrangChu
             formTrangchu.ShowDialog();
             this.Close();
         }
+
         private void btnmuonsach_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             MuonSach formMuonsach = new MuonSach();
-
             formMuonsach.ShowDialog();
             this.Close();
         }
@@ -46,9 +42,7 @@ namespace QuanLyMuonSach
         private void btnkhachhang_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             khachhang formKhachhang = new khachhang();
-
             formKhachhang.ShowDialog();
             this.Close();
         }
@@ -56,9 +50,7 @@ namespace QuanLyMuonSach
         private void btnvipham_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             vipham formVipham = new vipham();
-
             formVipham.ShowDialog();
             this.Close();
         }
@@ -66,9 +58,7 @@ namespace QuanLyMuonSach
         private void btnthongke_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             thongke formThongke = new thongke();
-
             formThongke.ShowDialog();
             this.Close();
         }
@@ -76,9 +66,7 @@ namespace QuanLyMuonSach
         private void btnnhanvien_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             NhanVien formNhanvien = new NhanVien();
-
             formNhanvien.ShowDialog();
             this.Close();
         }
@@ -88,244 +76,133 @@ namespace QuanLyMuonSach
             thaoTac = "them";
             EnableInput(true);
             ClearInput();
-            DAO.Connect();
-            string sql = "INSERT INTO Sach (TenSach, MaLoaiSach, MaLinhVuc, MaTG, MaNXB, MaNgonNgu, SoTrang, GiaSach, DonGiaThue, SoLuong, Anh, GhiChu) " +
-                         "VALUES (@TenSach, @MaLoaiSach, @MaLinhVuc, @MaTG, @MaNXB, @MaNgonNgu, @SoTrang, @GiaSach, @DonGiaThue, @SoLuong, @Anh, @GhiChu)";
-            SqlCommand cmd = new SqlCommand(sql, DAO.con);
-            cmd.Parameters.AddWithValue("@TenSach", txttensach.Text);
-            cmd.Parameters.AddWithValue("@MaLoaiSach", cbtheloai.Text);
-            cmd.Parameters.AddWithValue("@MaLinhVuc", cblinhvuc.Text);
-            cmd.Parameters.AddWithValue("@MaTG", txtmatacgia.Text);
-            cmd.Parameters.AddWithValue("@MaNXB",txtmanxb.Text);
-            cmd.Parameters.AddWithValue("@MaNgonNgu", txtmangonngu.Text);
-            cmd.Parameters.AddWithValue("@SoTrang", txtsotrang.Text);
-            cmd.Parameters.AddWithValue("@GiaSach", txtgiasach.Text);
-            cmd.Parameters.AddWithValue("@DonGiaThue", txtdongiathue.Text);
-            cmd.Parameters.AddWithValue("@SoLuong", txtsoluong.Text);
-            cmd.Parameters.AddWithValue("@Anh", pickhachhang.Text);
-            cmd.Parameters.AddWithValue("@GhiChu",  txtghichu.Text);
-
-            try
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Thêm sách thành công!");
-                LoadSach();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
-            DAO.Close();
-
-        }
-       
-       
-        private void ClearInput()
-        {
-            txttensach.Clear();
-            cbtheloai.Text = "";
-            cblinhvuc.Text = "";
-            txtmatacgia.Clear();
-            txtmanxb.Clear();
-            txtmangonngu.Clear();
-            txtsotrang.Clear();
-            txtgiasach.Clear();
-            txtdongiathue.Clear();
-            txtsoluong.Clear();
-            pickhachhang.Text = "";
-            txtghichu.Clear();
-        }
-
-        private void EnableInput(bool enable)
-        {
-            txttensach.Enabled = enable;
-            cbtheloai.Enabled = enable;
-            cblinhvuc.Enabled = enable;
-            txtmatacgia.Enabled = enable;
-           txtmanxb.Enabled = enable;
-            txtmangonngu.Enabled = enable;
-           txtsotrang.Enabled = enable;
-            txtgiasach.Enabled = enable;
-            txtdongiathue.Enabled = enable;
-            txtsoluong.Enabled = enable;
-            pickhachhang.Enabled = enable;
-             txtghichu.Enabled = enable;
-        }
-
-
-       
-        
-        
-
-        private void LoadSach()
-        {
-            DAO.Connect();
-            string sql = "SELECT * FROM Sach";
-            DataTable dt = DAO.LoadDataToTable(sql);
-            datakhachhang.DataSource = dt;
-            DAO.Close();
-        }
-
-        private void datakhachhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
-
-        private void btnsachtruyen_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sachtruyen_Load(object sender, EventArgs e)
-        {
-            LoadSach();
-        }
-
-        private void datakhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int i = e.RowIndex;
-            if (i >= 0)
-            {
-                txttensach.Text = datakhachhang.Rows[i].Cells["TenSach"].Value.ToString();
-                cbtheloai.Text = datakhachhang.Rows[i].Cells["MaLoaiSach"].Value.ToString();
-                cblinhvuc.Text = datakhachhang.Rows[i].Cells["MaLinhVuc"].Value.ToString();
-                txtmatacgia.Text = datakhachhang.Rows[i].Cells["MaTG"].Value.ToString();
-               txtmanxb.Text = datakhachhang.Rows[i].Cells["MaNXB"].Value.ToString();
-                txtmangonngu.Text = datakhachhang.Rows[i].Cells["MaNgonNgu"].Value.ToString();
-               txtsotrang.Text = datakhachhang.Rows[i].Cells["SoTrang"].Value.ToString();
-                txtgiasach.Text = datakhachhang.Rows[i].Cells["GiaSach"].Value.ToString();
-                txtdongiathue.Text = datakhachhang.Rows[i].Cells["DonGiaThue"].Value.ToString();
-                txtsoluong.Text = datakhachhang.Rows[i].Cells["SoLuong"].Value.ToString();
-                pickhachhang.Text = datakhachhang.Rows[i].Cells["Anh"].Value.ToString();
-                txtghichu.Text = datakhachhang.Rows[i].Cells["GhiChu"].Value.ToString();
-            }
-        }
-
-        private void txtmasach_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-       
-
-        private void pickhachhang_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    pickhachhang.Image = Image.FromFile(openFileDialog.FileName);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi khi mở ảnh: " + ex.Message);
-                }
-            }
         }
 
         private void btsua_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txttensach.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sách cần sửa.");
+                return;
+            }
+
             thaoTac = "sua";
             EnableInput(true);
-            DAO.Connect();
-            string sql = "UPDATE Sach SET " +
-                         "MaLoaiSach=@MaLoaiSach, MaLinhVuc=@MaLinhVuc, MaTG=@MaTG, MaNXB=@MaNXB, MaNgonNgu=@MaNgonNgu, " +
-                         "SoTrang=@SoTrang, GiaSach=@GiaSach, DonGiaThue=@DonGiaThue, SoLuong=@SoLuong, Anh=@Anh, GhiChu=@GhiChu " +
-                         "WHERE TenSach=@TenSach";
-            SqlCommand cmd = new SqlCommand(sql, DAO.con);
-            cmd.Parameters.AddWithValue("@TenSach", txttensach.Text);
-            cmd.Parameters.AddWithValue("@MaLoaiSach", cbtheloai.Text);
-            cmd.Parameters.AddWithValue("@MaLinhVuc", cblinhvuc.Text);
-            cmd.Parameters.AddWithValue("@MaTG", txtmatacgia.Text);
-            cmd.Parameters.AddWithValue("@MaNXB", txtmanxb.Text);
-            cmd.Parameters.AddWithValue("@MaNgonNgu", txtmangonngu.Text);
-            cmd.Parameters.AddWithValue("@SoTrang", txtsotrang.Text);
-            cmd.Parameters.AddWithValue("@GiaSach", txtgiasach.Text);
-            cmd.Parameters.AddWithValue("@DonGiaThue", txtdongiathue.Text);
-            cmd.Parameters.AddWithValue("@SoLuong", txtsoluong.Text);
-            cmd.Parameters.AddWithValue("@Anh", pickhachhang.Text);
-            cmd.Parameters.AddWithValue("@GhiChu", txtghichu.Text);
-
-            try
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Cập nhật thành công!");
-                LoadSach();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
-            }
-            DAO.Close();
-
         }
 
         private void btxoa_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txttensach.Text))
+            {
+                MessageBox.Show("Vui lòng chọn sách cần xóa.");
+                return;
+            }
+
             DAO.Connect();
-            string sql = "DELETE FROM Sach WHERE TenSach = @TenSach";
+            string sql = "DELETE FROM SachTruyen WHERE TenSach = @TenSach";
             SqlCommand cmd = new SqlCommand(sql, DAO.con);
             cmd.Parameters.AddWithValue("@TenSach", txttensach.Text);
 
             try
             {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Xóa thành công!");
-                LoadSach();
+                int result = cmd.ExecuteNonQuery();
+                if (result > 0)
+                {
+                    MessageBox.Show("Xóa thành công!");
+                    LoadSach();
+                    ClearInput();
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy sách để xóa.");
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-            DAO.Close();
+            finally
+            {
+                DAO.Close();
+            }
         }
 
         private void btluu_Click(object sender, EventArgs e)
         {
-            if (thaoTac == "them")
-
+            if (!int.TryParse(txtsotrang.Text, out int soTrang) ||
+                !decimal.TryParse(txtgiasach.Text, out decimal giaSach) ||
+                !decimal.TryParse(txtdongiathue.Text, out decimal donGiaThue) ||
+                !int.TryParse(txtsoluong.Text, out int soLuong))
             {
-                string sql = "INSERT INTO Sach(TenSach, MaLoaiSach, MaLinhVuc, MaTG, MaNXB, MaNgonNgu, SoTrang, GiaSach, DonGiaThue, SoLuong, Anh, GhiChu)" +
-                             " VALUES (N'" + txttensach.Text + "', N'" + cbtheloai.Text + "', N'" + cblinhvuc.Text + "', N'" + txtmatacgia.Text + "'," +
-                             " N'" + txtmanxb.Text + "', N'" + txtmangonngu.Text + "', " + txtsotrang.Text + ", " + txtgiasach.Text + ", " +
-                             txtdongiathue.Text + ", " + txtsoluong.Text + ", N'" + pickhachhang.Text + "', N'" + txtghichu.Text + "')";
+                MessageBox.Show("Dữ liệu số không hợp lệ.");
+                return;
+            }
 
-                DAO.Connect();
-                SqlCommand cmd = new SqlCommand(sql, DAO.con);
-                cmd.ExecuteNonQuery();
-                DAO.Close();
-                MessageBox.Show("Đã thêm sách.");
+            DAO.Connect();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = DAO.con;
+
+            if (thaoTac == "them")
+            {
+                cmd.CommandText = "INSERT INTO SachTruyen (TenSach, MaLoaiSach, MaLinhVuc, MaTG, MaNXB, MaNgonNgu, SoTrang, GiaSach, DonGiaThue, SoLuong, Anh, GhiChu) " +
+                                  "VALUES (@TenSach, @MaLoaiSach, @MaLinhVuc, @MaTG, @MaNXB, @MaNgonNgu, @SoTrang, @GiaSach, @DonGiaThue, @SoLuong, @Anh, @GhiChu)";
             }
             else if (thaoTac == "sua")
             {
-                string sql = "UPDATE Sach SET " +
-                             "MaLoaiSach = N'" + cbtheloai.Text + "', " +
-                             "MaLinhVuc = N'" + cblinhvuc.Text + "', " +
-                             "MaTG = N'" + txtmatacgia.Text + "', " +
-                             "MaNXB = N'" + txtmanxb.Text + "', " +
-                             "MaNgonNgu = N'" + txtmangonngu.Text + "', " +
-                             "SoTrang = " + txtsotrang.Text + ", " +
-                             "GiaSach = " + txtgiasach.Text + ", " +
-                             "DonGiaThue = " + txtdongiathue.Text + ", " +
-                             "SoLuong = " + txtsoluong.Text + ", " +
-                             "Anh = N'" + pickhachhang.Text + "', " +
-                             "GhiChu = N'" + txtghichu.Text + "' " +
-                             "WHERE TenSach = N'" + txttensach.Text + "'";
-
-                DAO.Connect();
-                SqlCommand cmd = new SqlCommand(sql, DAO.con);
-                cmd.ExecuteNonQuery();
+                cmd.CommandText = "UPDATE SachTruyen SET MaLoaiSach = @MaLoaiSach, MaLinhVuc = @MaLinhVuc, MaTG = @MaTG, MaNXB = @MaNXB, MaNgonNgu = @MaNgonNgu, " +
+                                  "SoTrang = @SoTrang, GiaSach = @GiaSach, DonGiaThue = @DonGiaThue, SoLuong = @SoLuong, Anh = @Anh, GhiChu = @GhiChu " +
+                                  "WHERE TenSach = @TenSach";
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn thao tác Thêm hoặc Sửa.");
                 DAO.Close();
-                MessageBox.Show("Đã cập nhật sách.");
+                return;
             }
 
-            LoadSach();
-            ClearInput();
-            EnableInput(false);
-            thaoTac = "";
+            cmd.Parameters.AddWithValue("@TenSach", txttensach.Text.Trim());
+            cmd.Parameters.AddWithValue("@MaLoaiSach", cbtheloai.Text.Trim());
+            cmd.Parameters.AddWithValue("@MaLinhVuc", cblinhvuc.Text.Trim());
+            cmd.Parameters.AddWithValue("@MaTG", txtmatacgia.Text.Trim());
+            cmd.Parameters.AddWithValue("@MaNXB", txtmanxb.Text.Trim());
+            cmd.Parameters.AddWithValue("@MaNgonNgu", txtmangonngu.Text.Trim());
+            cmd.Parameters.Add("@SoTrang", SqlDbType.Int).Value = soTrang;
+            cmd.Parameters.Add("@GiaSach", SqlDbType.Decimal).Value = giaSach;
+            cmd.Parameters.Add("@DonGiaThue", SqlDbType.Decimal).Value = donGiaThue;
+            cmd.Parameters.Add("@SoLuong", SqlDbType.Int).Value = soLuong;
 
+            if (pickhachhang.Image != null)
+            {
+                using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
+                {
+                    pickhachhang.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                    cmd.Parameters.Add("@Anh", SqlDbType.VarBinary).Value = ms.ToArray();
+                }
+            }
+            else
+            {
+                cmd.Parameters.Add("@Anh", SqlDbType.VarBinary).Value = DBNull.Value;
+            }
+
+            cmd.Parameters.AddWithValue("@GhiChu", string.IsNullOrEmpty(txtghichu.Text) ? DBNull.Value : (object)txtghichu.Text.Trim());
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                MessageBox.Show(thaoTac == "them" ? "Đã thêm sách." : "Đã cập nhật sách.");
+                LoadSach();
+                ClearInput();
+                EnableInput(false);
+                thaoTac = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message);
+            }
+            finally
+            {
+                DAO.Close();
+            }
         }
 
         private void bthuy_Click(object sender, EventArgs e)
@@ -335,10 +212,142 @@ namespace QuanLyMuonSach
             thaoTac = "";
         }
 
-        private void txtghichu_TextChanged(object sender, EventArgs e)
+        private void ClearInput()
         {
+            txttensach.Clear();
+            cbtheloai.SelectedIndex = -1;
+            cblinhvuc.SelectedIndex = -1;
+            txtmatacgia.Clear();
+            txtmanxb.Clear();
+            txtmangonngu.Clear();
+            txtsotrang.Clear();
+            txtgiasach.Clear();
+            txtdongiathue.Clear();
+            txtsoluong.Clear();
+            pickhachhang.Image = null;
+            txtghichu.Clear();
+        }
 
+        private void EnableInput(bool enable)
+        {
+            txttensach.Enabled = enable;
+            cbtheloai.Enabled = enable;
+            cblinhvuc.Enabled = enable;
+            txtmatacgia.Enabled = enable;
+            txtmanxb.Enabled = enable;
+            txtmangonngu.Enabled = enable;
+            txtsotrang.Enabled = enable;
+            txtgiasach.Enabled = enable;
+            txtdongiathue.Enabled = enable;
+            txtsoluong.Enabled = enable;
+            pickhachhang.Enabled = enable;
+            txtghichu.Enabled = enable;
+        }
+
+        private void LoadSach()
+        {
+            DAO.Connect();
+            string sql = "SELECT TenSach, MaLoaiSach, MaLinhVuc, MaTG, MaNXB, MaNgonNgu, SoTrang, GiaSach, DonGiaThue, SoLuong, Anh, GhiChu FROM SachTruyen";
+            DataTable dt = DAO.LoadDataToTable(sql);
+
+            // Xử lý hiển thị ảnh nếu cần
+            if (dt.Columns.Contains("Anh"))
+            {
+                dt.Columns.Add("HinhAnh", typeof(Image));
+                foreach (DataRow row in dt.Rows)
+                {
+                    if (row["Anh"] != DBNull.Value)
+                    {
+                        byte[] imgData = (byte[])row["Anh"];
+                        using (var ms = new System.IO.MemoryStream(imgData))
+                        {
+                            row["HinhAnh"] = Image.FromStream(ms);
+                        }
+                    }
+                    else
+                    {
+                        row["HinhAnh"] = null;
+                    }
+                }
+            }
+
+            datakhachhang.DataSource = dt;
+
+            // Ẩn cột ảnh gốc nếu muốn, chỉ hiện "HinhAnh"
+            if (datakhachhang.Columns["Anh"] != null)
+                datakhachhang.Columns["Anh"].Visible = false;
+            if (datakhachhang.Columns["HinhAnh"] != null)
+            {
+                datakhachhang.Columns["HinhAnh"].HeaderText = "Ảnh";
+                datakhachhang.Columns["HinhAnh"].Width = 100;
+            }
+
+            DAO.Close();
+        }
+
+        private void sachtruyen_Load(object sender, EventArgs e)
+        {
+            LoadSach();
+
+            cbtheloai.Items.Clear();
+            cbtheloai.Items.AddRange(new string[]
+            {
+                "Tâm lí", "Ngôn Tình", "Trinh thám", "Khác"
+            });
+
+            cblinhvuc.Items.Clear();
+            cblinhvuc.Items.AddRange(new string[]
+            {
+                "Tâm lí xa hội", "Kinh dị", "Y tế", "Tài chính", "Khác"
+            });
+
+            cbtheloai.SelectedIndex = 0;
+            cblinhvuc.SelectedIndex = 0;
+
+            EnableInput(false);
+        }
+
+        private void datakhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = e.RowIndex;
+            if (i >= 0 && i < datakhachhang.Rows.Count)
+            {
+                txttensach.Text = datakhachhang.Rows[i].Cells["TenSach"].Value.ToString();
+                cbtheloai.Text = datakhachhang.Rows[i].Cells["MaLoaiSach"].Value.ToString();
+                cblinhvuc.Text = datakhachhang.Rows[i].Cells["MaLinhVuc"].Value.ToString();
+                txtmatacgia.Text = datakhachhang.Rows[i].Cells["MaTG"].Value.ToString();
+                txtmanxb.Text = datakhachhang.Rows[i].Cells["MaNXB"].Value.ToString();
+                txtmangonngu.Text = datakhachhang.Rows[i].Cells["MaNgonNgu"].Value.ToString();
+                txtsotrang.Text = datakhachhang.Rows[i].Cells["SoTrang"].Value.ToString();
+                txtgiasach.Text = datakhachhang.Rows[i].Cells["GiaSach"].Value.ToString();
+                txtdongiathue.Text = datakhachhang.Rows[i].Cells["DonGiaThue"].Value.ToString();
+                txtsoluong.Text = datakhachhang.Rows[i].Cells["SoLuong"].Value.ToString();
+
+                if (datakhachhang.Rows[i].Cells["Anh"].Value != DBNull.Value)
+                {
+                    byte[] imgData = (byte[])datakhachhang.Rows[i].Cells["Anh"].Value;
+                    using (var ms = new System.IO.MemoryStream(imgData))
+                    {
+                        pickhachhang.Image = Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    pickhachhang.Image = null;
+                }
+
+                txtghichu.Text = datakhachhang.Rows[i].Cells["GhiChu"].Value.ToString();
+            }
+        }
+
+        private void pickhachhang_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Images (*.jpg;*.png;*.gif;*.bmp)|*.jpg;*.png;*.gif;*.bmp|All files (*.*)|*.*";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                pickhachhang.Image = Image.FromFile(ofd.FileName);
+            }
         }
     }
 }
-    

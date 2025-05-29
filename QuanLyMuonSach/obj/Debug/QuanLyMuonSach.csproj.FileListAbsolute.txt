@@ -65,3 +65,8 @@ C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLy
 C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.CoreCompileInputs.cache
 C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.exe
 C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.pdb
+C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe.config
+C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe
+C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.pdb
+C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\bin\Debug\Guna.UI2.dll
+C:\Users\PC\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMu.FC6E7602.Up2Date

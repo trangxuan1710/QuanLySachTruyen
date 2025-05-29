@@ -7,6 +7,14 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        // ✅ Khai báo biến thành viên cho txtten và txtmk
+        private Guna.UI2.WinForms.Guna2TextBox txtten;
+        private Guna.UI2.WinForms.Guna2TextBox txtmk;
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button btndangnhap;
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -28,66 +36,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Guna2TextBox txttentk;
-            Guna.UI2.WinForms.Guna2TextBox txtmatkhau;
+            this.txtten = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtmk = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btndangnhap = new Guna.UI2.WinForms.Guna2Button();
-            txttentk = new Guna.UI2.WinForms.Guna2TextBox();
-            txtmatkhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
-            // txttentk
+            // txtten
             // 
-            txttentk.BorderRadius = 15;
-            txttentk.BorderThickness = 2;
-            txttentk.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txttentk.DefaultText = "";
-            txttentk.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            txttentk.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            txttentk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            txttentk.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            txttentk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(139)))), ((int)(((byte)(81)))));
-            txttentk.FocusedState.BorderColor = System.Drawing.Color.White;
-            txttentk.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            txttentk.ForeColor = System.Drawing.Color.Black;
-            txttentk.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            txttentk.Location = new System.Drawing.Point(116, 290);
-            txttentk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            txttentk.Name = "txttentk";
-            txttentk.PasswordChar = '\0';
-            txttentk.PlaceholderForeColor = System.Drawing.Color.LemonChiffon;
-            txttentk.PlaceholderText = "Tên tài khoản";
-            txttentk.SelectedText = "";
-            txttentk.Size = new System.Drawing.Size(576, 112);
-            txttentk.TabIndex = 0;
-            txttentk.TextChanged += new System.EventHandler(this.txttentk_TextChanged);
+            this.txtten.BorderRadius = 15;
+            this.txtten.BorderThickness = 2;
+            this.txtten.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtten.DefaultText = "";
+            this.txtten.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtten.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtten.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtten.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtten.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(139)))), ((int)(((byte)(81)))));
+            this.txtten.FocusedState.BorderColor = System.Drawing.Color.White;
+            this.txtten.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtten.ForeColor = System.Drawing.Color.Black;
+            this.txtten.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtten.Location = new System.Drawing.Point(116, 290);
+            this.txtten.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtten.Name = "txtten";
+            this.txtten.PasswordChar = '\0';
+            this.txtten.PlaceholderForeColor = System.Drawing.Color.LemonChiffon;
+            this.txtten.PlaceholderText = "Tên tài khoản";
+            this.txtten.SelectedText = "";
+            this.txtten.Size = new System.Drawing.Size(576, 112);
+            this.txtten.TabIndex = 0;
+            this.txtten.TextChanged += new System.EventHandler(this.txttentk_TextChanged);
             // 
-            // txtmatkhau
+            // txtmk
             // 
-            txtmatkhau.BorderRadius = 15;
-            txtmatkhau.BorderThickness = 2;
-            txtmatkhau.Cursor = System.Windows.Forms.Cursors.IBeam;
-            txtmatkhau.DefaultText = "";
-            txtmatkhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            txtmatkhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            txtmatkhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            txtmatkhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            txtmatkhau.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(139)))), ((int)(((byte)(81)))));
-            txtmatkhau.FocusedState.BorderColor = System.Drawing.Color.White;
-            txtmatkhau.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            txtmatkhau.ForeColor = System.Drawing.Color.Black;
-            txtmatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            txtmatkhau.Location = new System.Drawing.Point(116, 448);
-            txtmatkhau.Margin = new System.Windows.Forms.Padding(6);
-            txtmatkhau.Name = "txtmatkhau";
-            txtmatkhau.PasswordChar = '*';
-            txtmatkhau.PlaceholderForeColor = System.Drawing.Color.LemonChiffon;
-            txtmatkhau.PlaceholderText = "Mật khẩu";
-            txtmatkhau.SelectedText = "";
-            txtmatkhau.Size = new System.Drawing.Size(576, 116);
-            txtmatkhau.TabIndex = 3;
-            txtmatkhau.TextChanged += new System.EventHandler(this.txtmatkhau_TextChanged);
+            this.txtmk.BorderRadius = 15;
+            this.txtmk.BorderThickness = 2;
+            this.txtmk.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmk.DefaultText = "";
+            this.txtmk.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtmk.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtmk.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmk.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtmk.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(139)))), ((int)(((byte)(81)))));
+            this.txtmk.FocusedState.BorderColor = System.Drawing.Color.White;
+            this.txtmk.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmk.ForeColor = System.Drawing.Color.Black;
+            this.txtmk.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmk.Location = new System.Drawing.Point(116, 448);
+            this.txtmk.Margin = new System.Windows.Forms.Padding(6);
+            this.txtmk.Name = "txtmk";
+            this.txtmk.PasswordChar = '*';
+            this.txtmk.PlaceholderForeColor = System.Drawing.Color.LemonChiffon;
+            this.txtmk.PlaceholderText = "Mật khẩu";
+            this.txtmk.SelectedText = "";
+            this.txtmk.Size = new System.Drawing.Size(576, 116);
+            this.txtmk.TabIndex = 3;
+            this.txtmk.TextChanged += new System.EventHandler(this.txtmatkhau_TextChanged);
             // 
             // label1
             // 
@@ -99,6 +105,7 @@
             this.label1.Size = new System.Drawing.Size(713, 61);
             this.label1.TabIndex = 1;
             this.label1.Text = "QUẢN LÝ MƯỢN SÁCH, TRUYỆN";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -136,10 +143,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(139)))), ((int)(((byte)(81)))));
             this.ClientSize = new System.Drawing.Size(804, 802);
             this.Controls.Add(this.btndangnhap);
-            this.Controls.Add(txtmatkhau);
+            this.Controls.Add(this.txtmk);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(txttentk);
+            this.Controls.Add(this.txtten);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
@@ -148,12 +155,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Button btndangnhap;
     }
 }

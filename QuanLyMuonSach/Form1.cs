@@ -14,7 +14,7 @@ namespace QuanLyMuonSach
 
         private void btndangnhap_Click(object sender, EventArgs e)
         {
-            if (txttentk.text == "NET" && txtmatkhau.Text == "123")
+            if (txtten.Text == "NET" && txtmk.Text == "123")
             {
                 Dashboard_book dbs = new Dashboard_book();
                 dbs.Show();
@@ -37,6 +37,11 @@ namespace QuanLyMuonSach
         }
 
         private void txtmatkhau_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
