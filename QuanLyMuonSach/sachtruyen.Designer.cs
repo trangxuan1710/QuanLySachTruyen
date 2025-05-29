@@ -215,6 +215,7 @@
             this.txtmasach.SelectedText = "";
             this.txtmasach.Size = new System.Drawing.Size(316, 36);
             this.txtmasach.TabIndex = 34;
+            this.txtmasach.TextChanged += new System.EventHandler(this.txtmasach_TextChanged);
             // 
             // txttensach
             // 
@@ -731,6 +732,7 @@
             this.pickhachhang.Size = new System.Drawing.Size(316, 200);
             this.pickhachhang.TabIndex = 64;
             this.pickhachhang.TabStop = false;
+            this.pickhachhang.Click += new System.EventHandler(this.pickhachhang_Click);
             // 
             // label16
             // 

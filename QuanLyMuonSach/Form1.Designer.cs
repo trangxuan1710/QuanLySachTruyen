@@ -52,7 +52,7 @@
             txttentk.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             txttentk.ForeColor = System.Drawing.Color.Black;
             txttentk.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            txttentk.Location = new System.Drawing.Point(116, 289);
+            txttentk.Location = new System.Drawing.Point(116, 290);
             txttentk.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             txttentk.Name = "txttentk";
             txttentk.PasswordChar = '\0';
@@ -87,6 +87,7 @@
             txtmatkhau.SelectedText = "";
             txtmatkhau.Size = new System.Drawing.Size(576, 116);
             txtmatkhau.TabIndex = 3;
+            txtmatkhau.TextChanged += new System.EventHandler(this.txtmatkhau_TextChanged);
             // 
             // label1
             // 

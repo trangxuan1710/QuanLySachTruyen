@@ -299,6 +299,30 @@ namespace QuanLyMuonSach
                 txtghichu.Text = datakhachhang.Rows[i].Cells["GhiChu"].Value.ToString();
             }
         }
+
+        private void txtmasach_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+       
+
+        private void pickhachhang_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    pickhachhang.Image = Image.FromFile(openFileDialog.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi mở ảnh: " + ex.Message);
+                }
+            }
+        }
     }
 }
     
