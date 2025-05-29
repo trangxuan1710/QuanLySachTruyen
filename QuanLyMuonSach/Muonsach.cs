@@ -359,5 +359,14 @@ namespace QuanLyMuonSach
             this.Close();
         }
 
+        private void txtmathue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataGridViewMuon_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

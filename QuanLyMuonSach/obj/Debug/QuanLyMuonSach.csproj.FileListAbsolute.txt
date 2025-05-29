@@ -37,3 +37,17 @@ C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Deb
 C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMu.FC6E7602.Up2Date
 C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.exe
 C:\Users\trang\source\repos\QuanLyMuonSach\QuanLyMuonSach\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.pdb
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.AssemblyReference.cache
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Dashboard_book.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Form1.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.khachhang.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.MuonSach.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.NhanVien.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Properties.Resources.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.sachtruyen.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.thongke.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.vipham.resources
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.GenerateResource.cache
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.CoreCompileInputs.cache
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.exe
+C:\Users\PC\Downloads\QuanLySachTruyen-master\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.pdb

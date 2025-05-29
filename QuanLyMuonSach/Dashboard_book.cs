@@ -44,5 +44,10 @@ namespace QuanLyMuonSach
             formNhanvien.ShowDialog();
             this.Close();
         }
+
+        private void btnsachtruyen_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

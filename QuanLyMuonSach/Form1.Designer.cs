@@ -61,6 +61,7 @@
             txttentk.SelectedText = "";
             txttentk.Size = new System.Drawing.Size(576, 112);
             txttentk.TabIndex = 0;
+            txttentk.TextChanged += new System.EventHandler(this.txttentk_TextChanged);
             // 
             // txtmatkhau
             // 
@@ -78,7 +79,7 @@
             txtmatkhau.ForeColor = System.Drawing.Color.Black;
             txtmatkhau.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             txtmatkhau.Location = new System.Drawing.Point(116, 448);
-            txtmatkhau.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            txtmatkhau.Margin = new System.Windows.Forms.Padding(6);
             txtmatkhau.Name = "txtmatkhau";
             txtmatkhau.PasswordChar = '*';
             txtmatkhau.PlaceholderForeColor = System.Drawing.Color.LemonChiffon;

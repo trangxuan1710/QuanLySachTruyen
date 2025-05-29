@@ -129,6 +129,7 @@
             this.btnsachtruyen.Size = new System.Drawing.Size(324, 95);
             this.btnsachtruyen.TabIndex = 5;
             this.btnsachtruyen.Text = "SÁCH TRUYỆN";
+            this.btnsachtruyen.Click += new System.EventHandler(this.btnsachtruyen_Click);
             // 
             // btnmuonsach
             // 

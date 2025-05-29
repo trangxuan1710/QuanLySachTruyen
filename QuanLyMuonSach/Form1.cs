@@ -30,5 +30,10 @@ namespace QuanLyMuonSach
         {
 
         }
+
+        private void txttentk_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
