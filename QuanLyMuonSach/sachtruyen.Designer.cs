@@ -219,7 +219,6 @@
             this.txtmasach.SelectedText = "";
             this.txtmasach.Size = new System.Drawing.Size(316, 36);
             this.txtmasach.TabIndex = 34;
-            //this.txtmasach.TextChanged += new System.EventHandler(this.txtmasach_TextChanged);
             // 
             // txttensach
             // 
@@ -253,7 +252,7 @@
             this.datakhachhang.Size = new System.Drawing.Size(1262, 318);
             this.datakhachhang.TabIndex = 32;
             this.datakhachhang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datakhachhang_CellClick);
-            //this.datakhachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datakhachhang_CellContentClick);
+            this.datakhachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datakhachhang_CellContentClick);
             // 
             // btnnhanvien
             // 
@@ -329,7 +328,6 @@
             this.btnsachtruyen.Size = new System.Drawing.Size(324, 95);
             this.btnsachtruyen.TabIndex = 28;
             this.btnsachtruyen.Text = "SÁCH TRUYỆN";
-           // this.btnsachtruyen.Click += new System.EventHandler(this.btnsachtruyen_Click);
             // 
             // btnvipham
             // 
@@ -517,6 +515,7 @@
             this.txtmanxb.SelectedText = "";
             this.txtmanxb.Size = new System.Drawing.Size(316, 36);
             this.txtmanxb.TabIndex = 48;
+            this.txtmanxb.TextChanged += new System.EventHandler(this.txtmanxb_TextChanged);
             // 
             // label8
             // 
@@ -673,7 +672,6 @@
             this.txtghichu.SelectedText = "";
             this.txtghichu.Size = new System.Drawing.Size(316, 92);
             this.txtghichu.TabIndex = 60;
-           // this.txtghichu.TextChanged += new System.EventHandler(this.txtghichu_TextChanged);
             // 
             // label14
             // 

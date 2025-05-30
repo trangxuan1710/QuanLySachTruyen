@@ -19,11 +19,15 @@ namespace QuanLySachTruyen
 
         public static void Connect()
         {
-            con.ConnectionString = ConnectionString;
             try
             {
-                if (con != null & con.State == ConnectionState.Closed)
-                    con.Open();
+                if (con != null && con.State != ConnectionState.Closed)
+                {
+                    con.Close(); // Đóng kết nối nếu đang mở
+                }
+
+                con.ConnectionString = ConnectionString;
+                con.Open(); // Mở lại
             }
             catch (Exception ex)
             {

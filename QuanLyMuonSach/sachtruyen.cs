@@ -19,6 +19,22 @@ namespace QuanLyMuonSach
         public sachtruyen()
         {
             InitializeComponent();
+            EnableInputs(true);
+        }
+        private void EnableInputs(bool enable)
+        {
+            txttensach.Enabled = enable;
+            cbtheloai.Enabled = enable;
+            cblinhvuc.Enabled = enable;
+            txtmatacgia.Enabled = enable;
+            txtmanxb.Enabled = enable;
+            txtmangonngu.Enabled = enable;
+            txtsotrang.Enabled = enable;
+            txtgiasach.Enabled = enable;
+            txtdongiathue.Enabled = enable;
+            txtsoluong.Enabled = enable;
+            pickhachhang.Enabled = enable; // nếu đây là TextBox hoặc Button để chọn ảnh
+            txtghichu.Enabled = enable;
         }
 
         private string thaoTac = "";
@@ -74,23 +90,23 @@ namespace QuanLyMuonSach
         private void btthem_Click(object sender, EventArgs e)
         {
             thaoTac = "them";
-            EnableInput(true);
+            EnableInputs(true);
             ClearInput();
         }
 
         private void btsua_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txttensach.Text))
+            if (datakhachhang.CurrentRow == null)
             {
-                MessageBox.Show("Vui lòng chọn sách cần sửa.");
+                MessageBox.Show("Vui lòng chọn một dòng để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            thaoTac = "sua";
-            EnableInput(true);
+            thaoTac = "sua"; // Biến trạng thái, bạn có thể dùng nó trong nút Lưu để phân biệt giữa thêm/sửa
+            EnableInputs(true); // Cho phép chỉnh sửa các ô nhập
         }
 
-        private void btxoa_Click(object sender, EventArgs e)
+            private void btxoa_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txttensach.Text))
             {
@@ -129,6 +145,14 @@ namespace QuanLyMuonSach
 
         private void btluu_Click(object sender, EventArgs e)
         {
+            // Kiểm tra mã sách không được để trống
+            if (string.IsNullOrWhiteSpace(txtmasach.Text))
+            {
+                MessageBox.Show("Vui lòng nhập mã sách.");
+                return;
+            }
+
+            // Kiểm tra các trường số hợp lệ
             if (!int.TryParse(txtsotrang.Text, out int soTrang) ||
                 !decimal.TryParse(txtgiasach.Text, out decimal giaSach) ||
                 !decimal.TryParse(txtdongiathue.Text, out decimal donGiaThue) ||
@@ -142,16 +166,30 @@ namespace QuanLyMuonSach
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = DAO.con;
 
+            // Xác định lệnh SQL tương ứng thao tác
             if (thaoTac == "them")
             {
-                cmd.CommandText = "INSERT INTO SachTruyen (TenSach, MaLoaiSach, MaLinhVuc, MaTG, MaNXB, MaNgonNgu, SoTrang, GiaSach, DonGiaThue, SoLuong, Anh, GhiChu) " +
-                                  "VALUES (@TenSach, @MaLoaiSach, @MaLinhVuc, @MaTG, @MaNXB, @MaNgonNgu, @SoTrang, @GiaSach, @DonGiaThue, @SoLuong, @Anh, @GhiChu)";
+                cmd.CommandText = @"INSERT INTO SachTruyen 
+        (MaSach, TenSach, MaLoaiSach, MaLinhVuc, MaTG, MaNXB, MaNgonNgu, SoTrang, GiaSach, DonGiaThue, SoLuong, Anh, GhiChu)
+        VALUES 
+        (@MaSach, @TenSach, @MaLoaiSach, @MaLinhVuc, @MaTG, @MaNXB, @MaNgonNgu, @SoTrang, @GiaSach, @DonGiaThue, @SoLuong, @Anh, @GhiChu)";
             }
             else if (thaoTac == "sua")
             {
-                cmd.CommandText = "UPDATE SachTruyen SET MaLoaiSach = @MaLoaiSach, MaLinhVuc = @MaLinhVuc, MaTG = @MaTG, MaNXB = @MaNXB, MaNgonNgu = @MaNgonNgu, " +
-                                  "SoTrang = @SoTrang, GiaSach = @GiaSach, DonGiaThue = @DonGiaThue, SoLuong = @SoLuong, Anh = @Anh, GhiChu = @GhiChu " +
-                                  "WHERE TenSach = @TenSach";
+                cmd.CommandText = @"UPDATE SachTruyen SET 
+        TenSach = @TenSach,
+        MaLoaiSach = @MaLoaiSach,
+        MaLinhVuc = @MaLinhVuc,
+        MaTG = @MaTG,
+        MaNXB = @MaNXB,
+        MaNgonNgu = @MaNgonNgu,
+        SoTrang = @SoTrang,
+        GiaSach = @GiaSach,
+        DonGiaThue = @DonGiaThue,
+        SoLuong = @SoLuong,
+        Anh = @Anh,
+        GhiChu = @GhiChu
+        WHERE MaSach = @MaSach";
             }
             else
             {
@@ -160,9 +198,11 @@ namespace QuanLyMuonSach
                 return;
             }
 
+            // Truyền các tham số vào command
+            cmd.Parameters.AddWithValue("@MaSach", txtmasach.Text.Trim());
             cmd.Parameters.AddWithValue("@TenSach", txttensach.Text.Trim());
-            cmd.Parameters.AddWithValue("@MaLoaiSach", cbtheloai.Text.Trim());
-            cmd.Parameters.AddWithValue("@MaLinhVuc", cblinhvuc.Text.Trim());
+            cmd.Parameters.AddWithValue("@MaLoaiSach", ((ComboboxItem)cbtheloai.SelectedItem).Value);
+            cmd.Parameters.AddWithValue("@MaLinhVuc", ((ComboboxItem)cblinhvuc.SelectedItem).Value);
             cmd.Parameters.AddWithValue("@MaTG", txtmatacgia.Text.Trim());
             cmd.Parameters.AddWithValue("@MaNXB", txtmanxb.Text.Trim());
             cmd.Parameters.AddWithValue("@MaNgonNgu", txtmangonngu.Text.Trim());
@@ -171,6 +211,7 @@ namespace QuanLyMuonSach
             cmd.Parameters.Add("@DonGiaThue", SqlDbType.Decimal).Value = donGiaThue;
             cmd.Parameters.Add("@SoLuong", SqlDbType.Int).Value = soLuong;
 
+            // Xử lý ảnh: chuyển ảnh thành mảng byte để lưu
             if (pickhachhang.Image != null)
             {
                 using (System.IO.MemoryStream ms = new System.IO.MemoryStream())
@@ -184,20 +225,25 @@ namespace QuanLyMuonSach
                 cmd.Parameters.Add("@Anh", SqlDbType.VarBinary).Value = DBNull.Value;
             }
 
-            cmd.Parameters.AddWithValue("@GhiChu", string.IsNullOrEmpty(txtghichu.Text) ? DBNull.Value : (object)txtghichu.Text.Trim());
+            // Ghi chú (nullable)
+            if (string.IsNullOrWhiteSpace(txtghichu.Text))
+                cmd.Parameters.AddWithValue("@GhiChu", DBNull.Value);
+            else
+                cmd.Parameters.AddWithValue("@GhiChu", txtghichu.Text.Trim());
 
+            // Thực thi lệnh
             try
             {
                 cmd.ExecuteNonQuery();
-                MessageBox.Show(thaoTac == "them" ? "Đã thêm sách." : "Đã cập nhật sách.");
-                LoadSach();
-                ClearInput();
-                EnableInput(false);
-                thaoTac = "";
+                MessageBox.Show(thaoTac == "them" ? "Đã thêm sách thành công." : "Đã cập nhật sách thành công.");
+                LoadSach();         // Tải lại dữ liệu
+                ClearInput();       // Xóa dữ liệu nhập
+                EnableInputs(false);// Khóa form
+                thaoTac = "";       // Reset thao tác
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi: " + ex.Message);
+                MessageBox.Show("Lỗi khi lưu: " + ex.Message);
             }
             finally
             {
@@ -205,10 +251,11 @@ namespace QuanLyMuonSach
             }
         }
 
+
         private void bthuy_Click(object sender, EventArgs e)
         {
             ClearInput();
-            EnableInput(false);
+            EnableInputs(false);
             thaoTac = "";
         }
 
@@ -228,21 +275,7 @@ namespace QuanLyMuonSach
             txtghichu.Clear();
         }
 
-        private void EnableInput(bool enable)
-        {
-            txttensach.Enabled = enable;
-            cbtheloai.Enabled = enable;
-            cblinhvuc.Enabled = enable;
-            txtmatacgia.Enabled = enable;
-            txtmanxb.Enabled = enable;
-            txtmangonngu.Enabled = enable;
-            txtsotrang.Enabled = enable;
-            txtgiasach.Enabled = enable;
-            txtdongiathue.Enabled = enable;
-            txtsoluong.Enabled = enable;
-            pickhachhang.Enabled = enable;
-            txtghichu.Enabled = enable;
-        }
+      
 
         private void LoadSach()
         {
@@ -284,28 +317,41 @@ namespace QuanLyMuonSach
 
             DAO.Close();
         }
+        public class ComboboxItem
+        {
+            public string Value { get; set; }
+            public string Text { get; set; }
+
+            public override string ToString()
+            {
+                return Text;
+            }
+        }
 
         private void sachtruyen_Load(object sender, EventArgs e)
         {
             LoadSach();
 
             cbtheloai.Items.Clear();
-            cbtheloai.Items.AddRange(new string[]
-            {
-                "Tâm lí", "Ngôn Tình", "Trinh thám", "Khác"
-            });
+            cbtheloai.Items.Add(new ComboboxItem { Text = "Tâm lí", Value = "TL01" });
+            cbtheloai.Items.Add(new ComboboxItem { Text = "Ngôn Tình", Value = "TL02" });
+            cbtheloai.Items.Add(new ComboboxItem { Text = "Trinh thám", Value = "TL03" });
+            cbtheloai.Items.Add(new ComboboxItem { Text = "Khác", Value = "TL04" });
+
 
             cblinhvuc.Items.Clear();
-            cblinhvuc.Items.AddRange(new string[]
-            {
-                "Tâm lí xa hội", "Kinh dị", "Y tế", "Tài chính", "Khác"
-            });
+            cblinhvuc.Items.Add(new ComboboxItem { Text = "Tâm lí xã hội", Value = "LV01" });
+            cblinhvuc.Items.Add(new ComboboxItem { Text = "Kinh dị", Value = "LV02" });
+            cblinhvuc.Items.Add(new ComboboxItem { Text = "Y tế", Value = "LV03" });
+            cblinhvuc.Items.Add(new ComboboxItem { Text = "Tài chính", Value = "LV04" });
+            cblinhvuc.Items.Add(new ComboboxItem { Text = "Khác", Value = "LV05" });
 
             cbtheloai.SelectedIndex = 0;
             cblinhvuc.SelectedIndex = 0;
 
-            EnableInput(false);
+            EnableInputs(false);
         }
+
 
         private void datakhachhang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -348,6 +394,16 @@ namespace QuanLyMuonSach
             {
                 pickhachhang.Image = Image.FromFile(ofd.FileName);
             }
+        }
+
+        private void datakhachhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtmanxb_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
