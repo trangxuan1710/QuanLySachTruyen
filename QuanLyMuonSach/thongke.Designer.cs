@@ -209,19 +209,6 @@
             this.cbthang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             resources.ApplyResources(this.cbthang, "cbthang");
             this.cbthang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbthang.Items.AddRange(new object[] {
-            resources.GetString("cbthang.Items"),
-            resources.GetString("cbthang.Items1"),
-            resources.GetString("cbthang.Items2"),
-            resources.GetString("cbthang.Items3"),
-            resources.GetString("cbthang.Items4"),
-            resources.GetString("cbthang.Items5"),
-            resources.GetString("cbthang.Items6"),
-            resources.GetString("cbthang.Items7"),
-            resources.GetString("cbthang.Items8"),
-            resources.GetString("cbthang.Items9"),
-            resources.GetString("cbthang.Items10"),
-            resources.GetString("cbthang.Items11")});
             this.cbthang.Name = "cbthang";
             // 
             // label4

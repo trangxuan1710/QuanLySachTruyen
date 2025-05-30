@@ -84,3 +84,22 @@ C:\Users\MSII\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\Quan
 C:\Users\MSII\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.pdb
 C:\Users\MSII\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLyMuonSach\bin\Debug\Guna.UI2.dll
 C:\Users\MSII\Downloads\QuanLySachTruyen-master (1)\QuanLySachTruyen-master\QuanLyMuonSach\obj\Debug\QuanLyMu.FC6E7602.Up2Date
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe.config
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.exe
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\bin\Debug\QuanLyMuonSach.pdb
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\bin\Debug\Guna.UI2.dll
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.AssemblyReference.cache
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Dashboard_book.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Form1.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.khachhang.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.MuonSach.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.NhanVien.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.Properties.Resources.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.sachtruyen.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.thongke.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.vipham.resources
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.GenerateResource.cache
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.csproj.CoreCompileInputs.cache
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMu.FC6E7602.Up2Date
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.exe
+C:\Users\trang\source\repos\QuanLyMuonSach\QuanLySachTruyen\QuanLyMuonSach\obj\Debug\QuanLyMuonSach.pdb

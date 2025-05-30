@@ -16,6 +16,12 @@ namespace QuanLyMuonSach
         public thongke()
         {
             InitializeComponent();
+            // Đảm bảo cbthang được điền các giá trị số nguyên (từ 1 đến 12)
+            // Điều này rất quan trọng để Convert.ToInt32 hoạt động.
+            for (int i = 1; i <= 12; i++)
+            {
+                cbthang.Items.Add(i);
+            }
         }
 
         private void thongke_Load(object sender, EventArgs e)
@@ -23,8 +29,8 @@ namespace QuanLyMuonSach
             try
             {
                 DAO.Connect();
-                bthuy.Enabled = false;
-                bttao.Enabled = false;
+                bthuy.Enabled = true;
+                bttao.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -35,42 +41,51 @@ namespace QuanLyMuonSach
 
         private void bttao_Click(object sender, EventArgs e)
         {
-            // Kiểm tra xem người dùng đã chọn tháng chưa
+            // Kiểm tra xem một mục có được chọn không
             if (cbthang.SelectedItem == null)
             {
                 MessageBox.Show("Vui lòng chọn một tháng để thống kê.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                return; // Thoát khỏi phương thức nếu không có tháng nào được chọn
             }
 
-            int thangDuocChon = Convert.ToInt32(cbthang.SelectedItem);
+            int thangDuocChon;
+
+            // Cố gắng phân tích cú pháp mục đã chọn. Cách này an toàn hơn Convert.ToInt32 trực tiếp.
+            if (!int.TryParse(cbthang.SelectedItem.ToString(), out thangDuocChon))
+            {
+                MessageBox.Show("Giá trị tháng không hợp lệ. Vui lòng chọn lại.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Thoát nếu phân tích cú pháp thất bại
+            }
+
             int namHienTai = DateTime.Now.Year; // Giả định thống kê cho năm hiện tại
 
             try
             {
                 // Truy vấn SQL để lấy dữ liệu thống kê
                 string sql = @"
-                       SELECT
-                        MONTH(ts.NgayThue) AS ThangThue,
-                        YEAR(ts.NgayThue) AS NamThue,
-                        COUNT(cts.MaSach) AS TongSoLuongSachThue,
-                        (
-                            SELECT TOP 1 ls.TenLoaiSach
-                            FROM ChiTietThueSach ct2
-                            INNER JOIN ThueSach ts2 ON ct2.MaThue = ts2.MaThue
-                            INNER JOIN SachTruyen st2 ON ct2.MaSach = st2.MaSach
-                            INNER JOIN LoaiSach ls ON st2.MaLoaiSach = ls.MaLoaiSach
-                            WHERE MONTH(ts2.NgayThue) = @Thang AND YEAR(ts2.NgayThue) = @Nam
-                            GROUP BY ls.TenLoaiSach
-                            ORDER BY COUNT(*) DESC
-                        ) AS TheLoaiMuonNhieuNhat
-                    FROM ThueSach ts
-                    INNER JOIN ChiTietThueSach cts ON ts.MaThue = cts.MaThue
-                    INNER JOIN SachTruyen st ON cts.MaSach = st.MaSach
-                    WHERE MONTH(ts.NgayThue) = @Thang AND YEAR(ts.NgayThue) = @Nam
-                    GROUP BY MONTH(ts.NgayThue), YEAR(ts.NgayThue);
+                        SELECT
+                            MONTH(ts.NgayThue) AS ThangThue,
+                            YEAR(ts.NgayThue) AS NamThue,
+                            COUNT(cts.MaSach) AS TongSoLuongSachThue,
+                            SUM(st.DonGiaThue) AS TongDoanhThu, -- Tính tổng doanh thu
+                            (
+                                SELECT TOP 1 ls.TenLoaiSach
+                                FROM ChiTietThueSach ct2
+                                INNER JOIN ThueSach ts2 ON ct2.MaThue = ts2.MaThue
+                                INNER JOIN SachTruyen st2 ON ct2.MaSach = st2.MaSach
+                                INNER JOIN LoaiSach ls ON st2.MaLoaiSach = ls.MaLoaiSach
+                                WHERE MONTH(ts2.NgayThue) = @Thang AND YEAR(ts2.NgayThue) = @Nam
+                                GROUP BY ls.TenLoaiSach
+                                ORDER BY COUNT(*) DESC
+                            ) AS TheLoaiMuonNhieuNhat
+                        FROM ThueSach ts
+                        INNER JOIN ChiTietThueSach cts ON ts.MaThue = cts.MaThue
+                        INNER JOIN SachTruyen st ON cts.MaSach = st.MaSach
+                        WHERE MONTH(ts.NgayThue) = @Thang AND YEAR(ts.NgayThue) = @Nam
+                        GROUP BY MONTH(ts.NgayThue), YEAR(ts.NgayThue);
                 ";
 
-                SqlCommand sqlCommand = new SqlCommand(sql, DAO.con);
+                using (SqlCommand sqlCommand = new SqlCommand(sql, DAO.con))
                 {
                     sqlCommand.Parameters.AddWithValue("@Thang", thangDuocChon);
                     sqlCommand.Parameters.AddWithValue("@Nam", namHienTai);
@@ -91,12 +106,14 @@ namespace QuanLyMuonSach
                             dtThongKe.Columns.Add("Năm", typeof(int));
                             dtThongKe.Columns.Add("Tổng Doanh Thu", typeof(decimal));
                             dtThongKe.Columns.Add("Thể Loại Mượn Nhiều Nhất", typeof(string));
+                            dtThongKe.Columns.Add("Tổng Số Lượng Sách Thuê", typeof(int));
 
                             dtThongKe.Rows.Add(
-                                Convert.ToInt32(reader["ThangMuon"]),
-                                Convert.ToInt32(reader["NamMuon"]),
+                                Convert.ToInt32(reader["ThangThue"]),
+                                Convert.ToInt32(reader["NamThue"]),
                                 reader["TongDoanhThu"] != DBNull.Value ? (decimal)reader["TongDoanhThu"] : 0,
-                                reader["TheLoaiMuonNhieuNhat"] != DBNull.Value ? reader["TheLoaiMuonNhieuNhat"].ToString() : ""
+                                reader["TheLoaiMuonNhieuNhat"] != DBNull.Value ? reader["TheLoaiMuonNhieuNhat"].ToString() : "",
+                                reader["TongSoLuongSachThue"] != DBNull.Value ? (int)reader["TongSoLuongSachThue"] : 0
                             );
 
                             // Gán DataTable cho DataGridView
@@ -121,14 +138,14 @@ namespace QuanLyMuonSach
         private void bthuy_Click(object sender, EventArgs e)
         {
             clear();
-            bthuy.Enabled = false;
-            bttao.Enabled = false;
+           
         }
         private void clear()
         {
             cbthang.SelectedIndex = -1; // Đặt lại giá trị của ComboBox
             lbldoanhthu.Text = "";
             lblTheLoaiNhieuNhat.Text = "";
+            datathongke.DataSource = null; // Xóa dữ liệu cũ trên DataGridView
         }
         private void cbthang_SelectedIndexChanged(object sender, EventArgs e)
         {

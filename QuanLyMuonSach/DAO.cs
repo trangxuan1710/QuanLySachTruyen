@@ -12,7 +12,7 @@ namespace QuanLyMuonSach
     {
         public static SqlConnection con = new SqlConnection();
         public static string ConnectionString =
-                                        "Data Source = NHi\\SQLEXPRESS;" +
+                                        "Data Source = TRANGXUAN\\SQLEXPRESS;" +
                                         "Initial Catalog=quanlysachtruyen;" +
                                         " Integrated Security = True;" +
                                         "Encrypt=False";
