@@ -10,7 +10,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyMuonSach;
-using QuanLySachTruyen;
 
 namespace QuanLyMuonSach
 {
@@ -30,7 +29,7 @@ namespace QuanLyMuonSach
         {
             try
             {
-                string query = "SELECT MaThue, MaKhach, MaNV, NgayThue, TienDatCoc FROM ThueSach";
+                string query = "SELECT TS.MaThue, KH.TenKhach, NV.TenNV, TS.NgayThue, TS.TienDatCoc FROM ThueSach AS TS  INNER JOIN KhachHang AS KH ON TS.MaKhach = KH.MaKhach INNER JOIN NhanVien AS NV ON TS.MaNV = NV.MaNV; ";
 
                 muonSachTable = DAO.LoadDataToTable(query);
 
@@ -45,7 +44,7 @@ namespace QuanLyMuonSach
 
         private void loadDataToGridViewMuon()
         {
-            string sql = "Select * from ThueSach";
+            string sql = "SELECT TS.MaThue, KH.TenKhach, NV.TenNV, TS.NgayThue, TS.TienDatCoc FROM ThueSach AS TS  INNER JOIN KhachHang AS KH ON TS.MaKhach = KH.MaKhach INNER JOIN NhanVien AS NV ON TS.MaNV = NV.MaNV; ";
             DataTable dt = DAO.LoadDataToTable(sql);
             DataGridViewMuon.DataSource = dt;
             DataGridViewMuon.Columns[0].HeaderText = "Mã thuê";
@@ -56,7 +55,11 @@ namespace QuanLyMuonSach
             DataGridViewMuon.AllowUserToAddRows = false;
             DataGridViewMuon.EditMode = DataGridViewEditMode.EditProgrammatically;
         }
-        
+
+        private void MuonSach_Load(object sender, EventArgs e)
+        {
+            loadDataToGridViewMuon();
+        }
         private void EnableInputFields(bool enable)
         {
             // txtmathue.Enabled = enable; 
@@ -66,10 +69,6 @@ namespace QuanLyMuonSach
             txttiencoc.Enabled = enable;
         }
 
-        private void MuonSach_Load(object sender, EventArgs e)
-        {
-            loadDataToGridViewMuon();
-        }
         private void bsua_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtmathue.Text))
@@ -214,16 +213,6 @@ namespace QuanLyMuonSach
             bluu.Enabled = false;
         }
 
-        private void bthoat_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            Dashboard_book formTrangChu = new Dashboard_book();
-
-            // Hiển thị form TrangChu
-            formTrangChu.ShowDialog();
-            this.Close();
-        }
 
         private void bxoa_Click(object sender, EventArgs e)
         {
@@ -326,47 +315,79 @@ namespace QuanLyMuonSach
             bluu.Enabled = true; // Bật nút Lưu
         }
 
-        private void btthoat_Click(object sender, EventArgs e)
+        private void btnsachtruyen_Click(object sender, EventArgs e)
         {
+            DAO.Close();
             this.Hide();
-
-            Dashboard_book formTrangchu = new Dashboard_book();
-
-            // Hiển thị form TrangChu
-            formTrangchu.ShowDialog();
+            sachtruyen formSachtruyen = new sachtruyen();
+            formSachtruyen.ShowDialog();
             this.Close();
         }
 
         private void btnmuonsach_Click(object sender, EventArgs e)
         {
+            DAO.Close();
             this.Hide();
-
             MuonSach formMuonsach = new MuonSach();
-
-            // Hiển thị form TrangChu
             formMuonsach.ShowDialog();
+            this.Close();
+        }
+
+        private void btnkhachhang_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            khachhang formKH = new khachhang();
+            formKH.ShowDialog();
+            this.Close();
+        }
+
+        private void btnvipham_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            vipham formVipham = new vipham();
+            formVipham.ShowDialog();
+            this.Close();
+        }
+
+        private void btnthongke_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            thongke formThongke = new thongke();
+            formThongke.ShowDialog();
             this.Close();
         }
 
         private void btnnhanvien_Click(object sender, EventArgs e)
         {
+            DAO.Close();
             this.Hide();
-
             NhanVien formNhanvien = new NhanVien();
-
-            // Hiển thị form TrangChu
             formNhanvien.ShowDialog();
             this.Close();
         }
 
-        private void txtmathue_TextChanged(object sender, EventArgs e)
+        private void btthoat_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
-        private void DataGridViewMuon_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private void bhuy_Click(object sender, EventArgs e)
         {
-
+            txtmathue.Text = "";
+            txtmakhach.Text = "";
+            txtmanv.Text = "";
+            dngaythue.Value = DateTime.Now; // Đặt ngày thuê là ngày hiện tại
+            txttiencoc.Text = "";
+            bthem.Enabled = true;
+            bsua.Enabled = true;
+            bxoa.Enabled = true;
+            bluu.Enabled = false;
         }
     }
 }

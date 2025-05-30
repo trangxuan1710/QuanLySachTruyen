@@ -118,10 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btthoat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
   <data name="btthoat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAADLNJREFUaEPlm3eQFNUWxq8gCIqKoigYMIsJzDlgxAjmhDliTphQMWBOgDmjEs0Z
+        DAAACwwBP0AiyAAADLNJREFUaEPlm3eQFNUWxq8gCIqKoigYMIsJzDlgxAjmhDliTphQMWBOgDmjEs0Z
         MYs5Z0UteSr+wcPVKsMurs7a3zu/vn1lZqd36B4GoeqdqlMsM933nq9PvOf0uFrTXMadnZt3M+dWP9a5
         fkOdu+ZB58a/6NzE15376V3nGo2jhBv5jO+4hmu5h3tZg7XmWOroXNstnFvzbOcGjHJu3ATnJr9jgN5z
         TgYsE3Mt93Ava7AWa7J2ss3sp8Wdm38/53Yd7tz9pq2p7yeCwx8af278jfFk4ymtWqmubVv91L59zPzN
@@ -178,10 +181,39 @@
         pznxY6r/ix9qNSeOYjTL+DndnPdTPOf+BysTCxwJ72E3AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btthoat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1803, 11</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btthoat.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btthoat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 89</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btthoat.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;btthoat.Name" xml:space="preserve">
+    <value>btthoat</value>
+  </data>
+  <data name="&gt;&gt;btthoat.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btthoat.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btthoat.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="bthuy.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
   <data name="bthuy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAXhJREFUOE9jGAXUBywsrCIGUooNdgrq0+zk8WCgvKOCxjRLOdUJ/Fy8JlDtqICR
+        DAAACwwBP0AiyAAAAXhJREFUOE9jGAXUBywsrCIGUooNdgrq0+zk8WCgvKOCxjRLOdUJ/Fy8JlDtqICR
         iZnDVklz4iqP8P8nAhLw4lOBif+vhaT83+wd9d9KTm0C1AhkwMikISGfN8cl6Nuj8Iz/n6Nz/r+Kyfn/
         DkiD2J+g9BsQBorD+CDDQS6GGoIAEgKivtMc/V/fDUsDK/4Ylf3/eF75/yOVjWBDPkfl/H8em/t/T33L
         /0tpRf8/AfkgdVgN5OXiNSg1c75+NxRqGBCD6Odxef/3tnT8P1rd9P9hbM7/fUD2kZomsAthajAMZGFl
@@ -190,10 +222,40 @@
         TlxNRMKG4e0+Mf+tsSdsCCA660Ex3qw3CsgADAwAmlOYCJq/SZ4AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="bthuy.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1568, 1005</value>
+  </data>
+  <data name="bthuy.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="bthuy.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 58</value>
+  </data>
+  <data name="bthuy.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="bthuy.Text" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="&gt;&gt;bthuy.Name" xml:space="preserve">
+    <value>bthuy</value>
+  </data>
+  <data name="&gt;&gt;bthuy.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;bthuy.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bthuy.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="btluu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
   <data name="btluu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAAxVJREFUOE+VlFtIk2Echz839ducdlEaK0pBb8Kga70yDS+6CjQ7UERUFHbwlHlh
+        DAAACwwBP0AiyAAAAxVJREFUOE+VlFtIk2Echz839ducdlEaK0pBb8Kga70yDS+6CjQ7UERUFHbwlHlh
         UXQTpFJJ5KFcHjd1iCnYnNmcGVqhmFaYjfCsZVGROdpi7tf//05k5TL94AHh/T0P7zfkk/hRKvzUajlw
         i1olb1XJcrgcGBjhE1mOUKtUAv5bpZLDVXLAZj9JUogQP/5KhUYbm1y48Vj5cNiRe+8OpV22VVaUExVL
         VCySnZ1ti42JEWRmpNsOnL1k0x688SosasfxpahGrYoMO1k3JhUC0nUHrtZ0wdfjJhobG7ErIUFgrDPg
@@ -209,10 +271,40 @@
         oFSuC9ZotgUHB0cT29dINLvckCRJ+g0hTp5Oh5SuYgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btluu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1338, 1005</value>
+  </data>
+  <data name="btluu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btluu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 58</value>
+  </data>
+  <data name="btluu.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="btluu.Text" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="&gt;&gt;btluu.Name" xml:space="preserve">
+    <value>btluu</value>
+  </data>
+  <data name="&gt;&gt;btluu.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btluu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btluu.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="btxoa.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
   <data name="btxoa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAA95JREFUOE+lkn9Qk3Ucx7cB1xgKkZBJidGZdclEfsSEoQxcSfCHmp1mcoKainDQ
+        vAAADrwBlbxySQAAA95JREFUOE+lkn9Qk3Ucx7cB1xgKkZBJidGZdclEfsSEoQxcSfCHmp1mcoKainDQ
         bZj9uroUsswuYAvhvIQHtR9Ybs/GwMHGUYzB5nRbQ5HfIklyFgh0pHHGu+/zXArcsLjrj9c9z/fu+3k9
         78/z+XAA3Gewo2OZ7t33PlZlZVHqjExKtXsvpd5D2JvBQmfso+h9mRSdyZBFafa/qeg2N8dOd9x/GR0c
         XHjy5VcM1Zu3oDE1FXWxYuieDEHNU0uhf+ZZ1C4PRX3YSjREReHHVSKYVothiBGBio9v73c6w9yE9soz
@@ -232,10 +324,40 @@
         rkJggg==
 </value>
   </data>
+  <data name="btxoa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1102, 1005</value>
+  </data>
+  <data name="btxoa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btxoa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 58</value>
+  </data>
+  <data name="btxoa.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="btxoa.Text" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="&gt;&gt;btxoa.Name" xml:space="preserve">
+    <value>btxoa</value>
+  </data>
+  <data name="&gt;&gt;btxoa.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btxoa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btxoa.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="btsua.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
   <data name="btsua.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAABZZJREFUSEudl8lvG1Ucx+O4LRXYs3nmvfES24nTOE5t1/Eep46zh6QKaakEakhZ
+        DAAACwwBP0AiyAAABZZJREFUSEudl8lvG1Ucx+O4LRXYs3nmvfES24nTOE5t1/Eep46zh6QKaakEakhZ
         JFrBpUc4IeCAwgFoJA60CYVKVZdUBZWqTdsDKmI5IYQEJ8oiwQX+Ae58f2+c2LEnqc3hJ49n3vt95re/
         6TAMvZMxw9mqcGZ0cqZ3NIiDmebjPNDF7PY0CjE76MI0+R7TZLuJ0+RGB9bt5YEAY6HuGOvuzQnBNff7
         PSwSLWq58TXu8ylivb0eIZwz56PApMBh+AM+Y2BwSUlXVpXizIYy9OQ9/N4WYl3fUfKTV6XR43/pffGj
@@ -262,10 +384,40 @@
         McP5H2Uu/AeIu332AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btsua.Location" type="System.Drawing.Point, System.Drawing">
+    <value>878, 1005</value>
+  </data>
+  <data name="btsua.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btsua.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 58</value>
+  </data>
+  <data name="btsua.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="btsua.Text" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="&gt;&gt;btsua.Name" xml:space="preserve">
+    <value>btsua</value>
+  </data>
+  <data name="&gt;&gt;btsua.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btsua.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btsua.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="btthem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Bold</value>
+  </data>
   <data name="btthem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAB4tJREFUSEutVnlUk1cWh4SwM4JLLQJFIipbEhZJkLDITpAEkcVSejwW3Fot1Dk6
+        DAAACwwBP0AiyAAAB4tJREFUSEutVnlUk1cWh4SwM4JLLQJFIipbEhZJkLDITpAEkcVSejwW3Fot1Dk6
         Eil4hmLZDWIg7GsSVkUMKMiqILKDoASRTgesDo4DVoROx4U77wvfGdpj/xiF3zm/89538+73u/e++70X
         ufeBIklBQ2/DOpYdddtFH6ZF1x57y7ssBvU6hax7TENVWQ9ftrpY9yc1IzuzrXneO82fBthbvNlnbw4y
         OljAPkerBQ9r05ZPNq71IsjLE3GXlUNLXWWrN924OcjRHHZbm8IeG1Pws6XIuHfn0hhgRwM2g/Kj7npN
@@ -299,6 +451,117 @@
         V0XA7m9TU1NiaGioVlRUlD6PxzPNzsqilxQXO6AA3MRCoS8a/TCWIBaXiJaJnoX4b2gdNnJEQpFTUWGR
         nUAgsExKSjKKiIjQDQoK0tDR0cGrLSf3X4XGnVH8B7dSAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="btthem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>663, 1005</value>
+  </data>
+  <data name="btthem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="btthem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 58</value>
+  </data>
+  <data name="btthem.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="btthem.Text" xml:space="preserve">
+    <value>Thêm</value>
+  </data>
+  <data name="&gt;&gt;btthem.Name" xml:space="preserve">
+    <value>btthem</value>
+  </data>
+  <data name="&gt;&gt;btthem.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btthem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btthem.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtmakhachhang.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtmakhachhang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>819, 258</value>
+  </data>
+  <data name="txtmakhachhang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txtmakhachhang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 36</value>
+  </data>
+  <data name="txtmakhachhang.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;txtmakhachhang.Name" xml:space="preserve">
+    <value>txtmakhachhang</value>
+  </data>
+  <data name="&gt;&gt;txtmakhachhang.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;txtmakhachhang.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtmakhachhang.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="txttenkhachhang.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txttenkhachhang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>819, 328</value>
+  </data>
+  <data name="txttenkhachhang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txttenkhachhang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 36</value>
+  </data>
+  <data name="txttenkhachhang.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;txttenkhachhang.Name" xml:space="preserve">
+    <value>txttenkhachhang</value>
+  </data>
+  <data name="&gt;&gt;txttenkhachhang.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;txttenkhachhang.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txttenkhachhang.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="datakhachhang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>756, 512</value>
+  </data>
+  <data name="datakhachhang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="datakhachhang.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="datakhachhang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>880, 384</value>
+  </data>
+  <data name="datakhachhang.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;datakhachhang.Name" xml:space="preserve">
+    <value>datakhachhang</value>
+  </data>
+  <data name="&gt;&gt;datakhachhang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datakhachhang.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;datakhachhang.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="btnnhanvien.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
   </data>
   <data name="btnnhanvien.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -338,6 +601,36 @@
         nUAgsExKSjKKiIjQDQoK0tDR0cGrLSf3X4XGnVH8B7dSAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnnhanvien.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 962</value>
+  </data>
+  <data name="btnnhanvien.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnnhanvien.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 82</value>
+  </data>
+  <data name="btnnhanvien.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="btnnhanvien.Text" xml:space="preserve">
+    <value>NHÂN VIÊN </value>
+  </data>
+  <data name="&gt;&gt;btnnhanvien.Name" xml:space="preserve">
+    <value>btnnhanvien</value>
+  </data>
+  <data name="&gt;&gt;btnnhanvien.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnnhanvien.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnnhanvien.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="btnthongke.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
   <data name="btnthongke.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -359,6 +652,36 @@
         QC+mOPEW3J8s/e35DOn/L2dK/99bI3ZOUYxFCaqEdMDGwshe4c/X8WCSxK+nUyX+X+4Sf2uqzGYFlSYP
         8HMxCU5OEFh1vUfsa3Ugbx8XOyMPACUDfuTg8I81AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="btnthongke.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 814</value>
+  </data>
+  <data name="btnthongke.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnthongke.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 82</value>
+  </data>
+  <data name="btnthongke.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="btnthongke.Text" xml:space="preserve">
+    <value>THỐNG KÊ</value>
+  </data>
+  <data name="&gt;&gt;btnthongke.Name" xml:space="preserve">
+    <value>btnthongke</value>
+  </data>
+  <data name="&gt;&gt;btnthongke.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnthongke.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnthongke.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="btnmuonsach.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
   </data>
   <data name="btnmuonsach.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -389,6 +712,36 @@
         9gAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btnmuonsach.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 364</value>
+  </data>
+  <data name="btnmuonsach.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnmuonsach.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 82</value>
+  </data>
+  <data name="btnmuonsach.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="btnmuonsach.Text" xml:space="preserve">
+    <value>MƯỢN SÁCH</value>
+  </data>
+  <data name="&gt;&gt;btnmuonsach.Name" xml:space="preserve">
+    <value>btnmuonsach</value>
+  </data>
+  <data name="&gt;&gt;btnmuonsach.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnmuonsach.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnmuonsach.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="btnsachtruyen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
   <data name="btnsachtruyen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAEQ
@@ -401,6 +754,36 @@
         y/I+amS3ntRqNe8ykFk3MgyLW63WOdmdItlg3UqlwqKWzWYffD7fl9/vl/QgPTKZ/UTG3xFbttRms/li
         yw4Qy45Myy4Jy65Fs/kXz4nX+ry17EFv2S8MlmH9P20a9QswGItPVACk3QAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="btnsachtruyen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 212</value>
+  </data>
+  <data name="btnsachtruyen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnsachtruyen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 82</value>
+  </data>
+  <data name="btnsachtruyen.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="btnsachtruyen.Text" xml:space="preserve">
+    <value>SÁCH TRUYỆN</value>
+  </data>
+  <data name="&gt;&gt;btnsachtruyen.Name" xml:space="preserve">
+    <value>btnsachtruyen</value>
+  </data>
+  <data name="&gt;&gt;btnsachtruyen.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnsachtruyen.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnsachtruyen.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="btnvipham.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
   </data>
   <data name="btnvipham.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -462,6 +845,36 @@
         pznxY6r/ix9qNSeOYjTL+DndnPdTPOf+BysTCxwJ72E3AAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="btnvipham.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 664</value>
+  </data>
+  <data name="btnvipham.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnvipham.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 82</value>
+  </data>
+  <data name="btnvipham.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="btnvipham.Text" xml:space="preserve">
+    <value>VI PHẠM</value>
+  </data>
+  <data name="&gt;&gt;btnvipham.Name" xml:space="preserve">
+    <value>btnvipham</value>
+  </data>
+  <data name="&gt;&gt;btnvipham.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnvipham.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnvipham.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="btnkhachhang.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt, style=Bold</value>
+  </data>
   <data name="btnkhachhang.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -491,5 +904,428 @@
         r4G5u2p/g1N2jSzcPDreBJGskMkuSmwi1j9QCPX9pMhXQHKHUGZ+NpfZr7U3Ko/Hx2L/A+VL/136vJI1
         AAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="btnkhachhang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 514</value>
+  </data>
+  <data name="btnkhachhang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="btnkhachhang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 82</value>
+  </data>
+  <data name="btnkhachhang.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="btnkhachhang.Text" xml:space="preserve">
+    <value>KHÁCH HÀNG</value>
+  </data>
+  <data name="&gt;&gt;btnkhachhang.Name" xml:space="preserve">
+    <value>btnkhachhang</value>
+  </data>
+  <data name="&gt;&gt;btnkhachhang.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;btnkhachhang.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnkhachhang.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 22.2pt, style=Bold</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 30</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1076, 61</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>CHƯƠNG TRÌNH QUẢN LÝ MƯỢN SÁCH, TRUYỆN</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13.8pt, style=Bold</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 328</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 38</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Tên Khách hàng</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13.8pt, style=Bold</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 258</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 38</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Mã Khách hàng</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13.8pt, style=Bold</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 47</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 38</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>DASHBOARD</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 20pt, style=Bold</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>842, 92</value>
+  </data>
+  <data name="label16.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>22, 25, 22, 25</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>572, 104</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>THÔNG TIN KHÁCH HÀNG</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt, style=Bold</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1310, 318</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 38</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="mngaysinh.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt</value>
+  </data>
+  <data name="mngaysinh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1515, 315</value>
+  </data>
+  <data name="mngaysinh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 5</value>
+  </data>
+  <data name="mngaysinh.Mask" xml:space="preserve">
+    <value>00/00/0000</value>
+  </data>
+  <data name="mngaysinh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 45</value>
+  </data>
+  <data name="mngaysinh.TabIndex" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="&gt;&gt;mngaysinh.Name" xml:space="preserve">
+    <value>mngaysinh</value>
+  </data>
+  <data name="&gt;&gt;mngaysinh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mngaysinh.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mngaysinh.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="txtdiachi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="txtdiachi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1515, 258</value>
+  </data>
+  <data name="txtdiachi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 2, 3, 2</value>
+  </data>
+  <data name="txtdiachi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 36</value>
+  </data>
+  <data name="txtdiachi.TabIndex" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="&gt;&gt;txtdiachi.Name" xml:space="preserve">
+    <value>txtdiachi</value>
+  </data>
+  <data name="&gt;&gt;txtdiachi.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;txtdiachi.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtdiachi.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13.8pt, style=Bold</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1310, 258</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 38</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt, style=Bold</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1310, 398</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 38</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkgioitinh.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkgioitinh.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="checkgioitinh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1515, 401</value>
+  </data>
+  <data name="checkgioitinh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="checkgioitinh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 33</value>
+  </data>
+  <data name="checkgioitinh.TabIndex" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="checkgioitinh.Text" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="&gt;&gt;checkgioitinh.Name" xml:space="preserve">
+    <value>checkgioitinh</value>
+  </data>
+  <data name="&gt;&gt;checkgioitinh.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;checkgioitinh.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkgioitinh.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checknu.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checknu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="checknu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1679, 401</value>
+  </data>
+  <data name="checknu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="checknu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 33</value>
+  </data>
+  <data name="checknu.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="checknu.Text" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="&gt;&gt;checknu.Name" xml:space="preserve">
+    <value>checknu</value>
+  </data>
+  <data name="&gt;&gt;checknu.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;checknu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checknu.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1792, 1028</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>khachhang</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>khachhang</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

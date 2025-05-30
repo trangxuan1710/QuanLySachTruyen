@@ -6,28 +6,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QuanLySachTruyen
+namespace QuanLyMuonSach
 {
     internal class DAO
     {
         public static SqlConnection con = new SqlConnection();
         public static string ConnectionString =
-                                        "Data Source = DESKTOP-9C5NLIH\\SQLEXPRESS01;" +
+                                        "Data Source = NHi\\SQLEXPRESS;" +
                                         "Initial Catalog=quanlysachtruyen;" +
                                         " Integrated Security = True;" +
                                         "Encrypt=False";
 
         public static void Connect()
         {
+            con.ConnectionString = ConnectionString;
             try
             {
-                if (con != null && con.State != ConnectionState.Closed)
-                {
-                    con.Close(); // Đóng kết nối nếu đang mở
-                }
-
-                con.ConnectionString = ConnectionString;
-                con.Open(); // Mở lại
+                if (con != null & con.State == ConnectionState.Closed)
+                    con.Open();
             }
             catch (Exception ex)
             {

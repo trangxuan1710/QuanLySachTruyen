@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using QuanLyMuonSach;
-using QuanLySachTruyen;
 
 namespace QuanLyMuonSach
 {
@@ -14,11 +13,12 @@ namespace QuanLyMuonSach
 
         private void btndangnhap_Click(object sender, EventArgs e)
         {
-            if (txtten.Text == "NET" && txtmk.Text == "123")
+            if (txttentk.Text == "NET" && txtmatkhau.Text == "123")
             {
-                Dashboard_book dbs = new Dashboard_book();
-                dbs.Show();
                 this.Hide();
+                Dashboard_book dbs = new Dashboard_book();
+                dbs.ShowDialog();
+                this.Close();
             }
             else
             {
@@ -37,11 +37,6 @@ namespace QuanLyMuonSach
         }
 
         private void txtmatkhau_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
         {
 
         }

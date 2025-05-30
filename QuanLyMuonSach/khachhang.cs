@@ -10,7 +10,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyMuonSach;
-using QuanLySachTruyen;
 
 namespace QuanLyMuonSach
 {
@@ -23,6 +22,7 @@ namespace QuanLyMuonSach
 
         private void btnmuonsach_Click(object sender, EventArgs e)
         {
+            DAO.Close();
             this.Hide();
 
             MuonSach formMuonsach = new MuonSach();
@@ -32,6 +32,7 @@ namespace QuanLyMuonSach
         }
         private void btnnhanvien_Click(object sender, EventArgs e)
         {
+            DAO.Close();
             this.Hide();
 
             NhanVien formNhanvien = new NhanVien();
@@ -41,6 +42,7 @@ namespace QuanLyMuonSach
         }
         private void btnthongke_Click(object sender, EventArgs e)
         {
+            DAO.Close();
             this.Hide();
 
             thongke formThongke = new thongke();
@@ -50,6 +52,7 @@ namespace QuanLyMuonSach
         }
         private void btnvipham_Click(object sender, EventArgs e)
         {
+            DAO.Close();
             this.Hide();
 
             vipham formVipham   = new vipham();
@@ -59,6 +62,7 @@ namespace QuanLyMuonSach
         }
         private void btnkhachhang_Click(object sender, EventArgs e)
         {
+            DAO.Close();
             this.Hide();
 
             khachhang formKhachhang = new khachhang();

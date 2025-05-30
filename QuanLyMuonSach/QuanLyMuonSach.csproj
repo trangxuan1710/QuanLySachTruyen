@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO.cs" />
-    <Compile Include="Dashboard.cs" />
     <Compile Include="Dashboard_book.cs">
       <SubType>Form</SubType>
     </Compile>

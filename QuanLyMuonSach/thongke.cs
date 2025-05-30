@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLySachTruyen;
 
 namespace QuanLyMuonSach
 {
@@ -152,6 +151,60 @@ namespace QuanLyMuonSach
             {
                 this.Close();
             }
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            sachtruyen formSachtruyen = new sachtruyen();
+            formSachtruyen.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            MuonSach formMuonsach = new MuonSach();
+            formMuonsach.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            khachhang formKH = new khachhang();
+            formKH.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            vipham formVipham = new vipham();
+            formVipham.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            thongke formThongke = new thongke();
+            formThongke.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            DAO.Close();
+            this.Hide();
+            NhanVien formNhanvien = new NhanVien();
+            formNhanvien.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace QuanLyMuonSach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new sachtruyen());
+            Application.Run(new Form1());
         }
     }
 }

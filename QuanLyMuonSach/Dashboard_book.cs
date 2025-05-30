@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLySachTruyen;
 
 namespace QuanLyMuonSach
 {
@@ -20,16 +19,13 @@ namespace QuanLyMuonSach
 
         private void btthoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnmuonsach_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             MuonSach formMuonsach = new MuonSach();
-
-            // Hiển thị form TrangChu
             formMuonsach.ShowDialog();
             this.Close();
         }
@@ -37,17 +33,43 @@ namespace QuanLyMuonSach
         private void btnnhanvien_Click(object sender, EventArgs e)
         {
             this.Hide();
-
             NhanVien formNhanvien = new NhanVien();
-
-            // Hiển thị form TrangChu
             formNhanvien.ShowDialog();
             this.Close();
         }
 
         private void btnsachtruyen_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            sachtruyen formSachtruyen = new sachtruyen();
+            formSachtruyen.ShowDialog();
+            this.Close();
+        }
 
+        private void btnkhachhang_Click(object sender, EventArgs e)
+        {
+            {
+                this.Hide();
+                khachhang formKH = new khachhang();
+                formKH.ShowDialog();
+                this.Close();
+            }
+        }
+
+        private void btnvipham_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            vipham formVipham = new vipham();
+            formVipham.ShowDialog();
+            this.Close();
+        }
+
+        private void btnthongke_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            thongke formThongke = new thongke();
+            formThongke.ShowDialog();
+            this.Close();
         }
     }
 }
